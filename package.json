@@ -9,23 +9,23 @@
   },
   "devDependencies": {
     "@iconify-json/material-symbols": "^1.2.12",
-    "@iconify-json/mdi": "^1.2.2",
+    "@iconify-json/mdi": "^1.2.3",
     "@nuxt/icon": "^1.10.3",
     "@nuxtjs/device": "^3.2.4",
     "@types/d3": "^7.4.3",
     "autoprefixer": "^10.4.20",
-    "nuxt": "^3.15.1",
-    "postcss": "^8.4.49",
+    "nuxt": "^3.15.2",
+    "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "@nuxt/image": "^1.9.0",
-    "@tresjs/cientos": "^4.0.3",
+    "@tresjs/cientos": "^4.1.0",
     "@tresjs/core": "^4.3.2",
     "@tresjs/nuxt": "^3.0.7",
     "d3": "^7.9.0",
     "dotenv": "^16.4.7",
-    "mongoose": "^8.9.4",
+    "mongoose": "^8.9.5",
     "npm": "^11.0.0",
     "three": "^0.171.0"
   }
