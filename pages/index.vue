@@ -35,15 +35,15 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: 'Jaden Chant',
+  title: "Jaden Chant",
 });
 
 useSeoMeta({
-  title: 'Jaden Chant',
-  ogTitle: 'Jaden Chant',
-  author: 'Jaden Chant',
-  description: 'Recent CS College Graduate from St. Olaf College',
-  ogDescription: 'Recent CS College Graduate from St. Olaf College',
-  ogImage: 'https://jadenchant.com/_ipx/w_1500/images/jaden_nyc.png',
+  title: "Jaden Chant",
+  ogTitle: "Jaden Chant",
+  author: "Jaden Chant",
+  description: "Recent CS College Graduate from St. Olaf College",
+  ogDescription: "Recent CS College Graduate from St. Olaf College",
+  ogImage: "https://jadenchant.com/_ipx/w_1500/images/jaden_nyc.png",
 });
 </script>

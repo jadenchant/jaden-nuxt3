@@ -3,8 +3,8 @@
     <div class="flex justify-center h-14 mb-4">
       <button @click="toggle" class="px-16 pt-2 rounded">
         <h4 class="text-lg">
-          {{ isOpen ? 'Hide' : 'Show' }}
-          {{ props.buttonText ? props.buttonText : 'Details' }}
+          {{ isOpen ? "Hide" : "Show" }}
+          {{ props.buttonText ? props.buttonText : "Details" }}
         </h4>
         <Icon
           v-if="!isOpen"
@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import { useToggle } from '~/compostables/useToggle';
+import { ref, watch } from "vue";
+import { useToggle } from "~/compostables/useToggle";
 
 const props = defineProps<{
   buttonText?: string;

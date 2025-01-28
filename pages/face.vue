@@ -34,10 +34,10 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: 'Faces',
+  title: "Faces",
 });
 
-import { BasicShadowMap, NoToneMapping, SRGBColorSpace, Vector3 } from 'three';
+import { BasicShadowMap, NoToneMapping, SRGBColorSpace, Vector3 } from "three";
 const gl = {
   shadows: true,
   alpha: true,
@@ -45,12 +45,12 @@ const gl = {
   outputColorSpace: SRGBColorSpace,
   toneMapping: NoToneMapping,
 };
-import { OrbitControls } from '@tresjs/cientos';
+import { OrbitControls } from "@tresjs/cientos";
 
 const modelRef = shallowRef<any>(null);
 
 const onModelError = (error: Error) => {
-  console.error('Error loading model:', error);
+  console.error("Error loading model:", error);
 };
 
 watch(modelRef, () => {

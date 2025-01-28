@@ -1,7 +1,7 @@
-import { Flights } from '../../models';
+import { Flights } from "../../models";
 
 export default defineEventHandler(async (event) => {
-  console.log('Get 30Flights');
+  console.log("Get 30Flights");
 
   try {
     const data = await Flights.getPrev30();
@@ -12,14 +12,14 @@ export default defineEventHandler(async (event) => {
         units: flt.units,
       }));
     } else {
-      throw new Error('Data is null');
+      throw new Error("Data is null");
     }
   } catch (error) {
     console.dir(error);
     event.node.res.statusCode = 500;
     return {
-      code: '500',
-      message: 'SERVER ERROR',
+      code: "500",
+      message: "SERVER ERROR",
       details: error,
     };
   }

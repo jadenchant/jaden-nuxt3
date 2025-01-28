@@ -1,10 +1,10 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
-        lang: 'en',
+        lang: "en",
       },
     },
   },
@@ -14,13 +14,13 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'node-server',
-    plugins: ['~/server/index.ts'],
+    preset: "node-server",
+    plugins: ["~/server/index.ts"],
     compressPublicAssets: true,
   },
 
-  modules: ['@nuxt/image', '@tresjs/nuxt', '@nuxtjs/device', '@nuxt/icon'],
-  css: ['@/assets/css/main.css'],
+  modules: ["@nuxt/image", "@tresjs/nuxt", "@nuxtjs/device", "@nuxt/icon"],
+  css: ["@/assets/css/main.css"],
 
   postcss: {
     plugins: {
@@ -34,8 +34,8 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    customCollections: [{ prefix: 'my-icons', dir: './assets/icons' }],
+    customCollections: [{ prefix: "my-icons", dir: "./assets/icons" }],
   },
 
-  compatibilityDate: '2024-07-13',
+  compatibilityDate: "2024-07-13",
 });

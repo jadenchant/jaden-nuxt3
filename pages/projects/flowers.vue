@@ -24,6 +24,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: 'Flowers',
+  title: "Flowers",
 });
 </script>

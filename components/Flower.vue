@@ -32,14 +32,14 @@
 </template>
 
 <script setup lang="ts">
-import { useRenderLoop } from '@tresjs/core';
+import { useRenderLoop } from "@tresjs/core";
 import {
   BasicShadowMap,
   NoToneMapping,
   SRGBColorSpace,
   Vector3,
   Color,
-} from 'three';
+} from "three";
 const props = defineProps<{
   modelPath: string;
   zPos: number;
@@ -59,7 +59,7 @@ const gl = {
 const modelRef = shallowRef<any>();
 
 const onModelError = (error: any) => {
-  console.error('Error loading model:', error);
+  console.error("Error loading model:", error);
 };
 
 watch(modelRef, (newValue, oldValue) => {

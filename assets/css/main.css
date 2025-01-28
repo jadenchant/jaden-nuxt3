@@ -3,38 +3,44 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'TitilliumWeb';
+  font-family: "TitilliumWeb";
   font-style: normal;
   font-weight: 300;
-  src: local(''), url('@/assets/fonts/TitilliumWeb-Regular.ttf') format('ttf');
+  src:
+    local(""),
+    url("@/assets/fonts/TitilliumWeb-Regular.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: 'TitilliumWeb';
+  font-family: "TitilliumWeb";
   font-style: italic;
   font-weight: 300;
-  src: local(''),
-    url('@/assets/fonts/TitilliumWeb-Italic.ttf') format('truetype');
+  src:
+    local(""),
+    url("@/assets/fonts/TitilliumWeb-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'TitilliumWeb';
+  font-family: "TitilliumWeb";
   font-style: bold;
   font-weight: 500;
-  src: local(''), url('@/assets/fonts/TitilliumWeb-Bold.ttf') format('truetype');
+  src:
+    local(""),
+    url("@/assets/fonts/TitilliumWeb-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'TitilliumWeb';
+  font-family: "TitilliumWeb";
   font-style: semibold;
   font-weight: 400;
-  src: local(''),
-    url('@/assets/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
+  src:
+    local(""),
+    url("@/assets/fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
 }
 
 @layer base {
   html {
-    font-family: 'TitilliumWeb', sans-serif;
+    font-family: "TitilliumWeb", sans-serif;
     color: #f0f0f0;
     scrollbar-width: none;
   }

@@ -13,7 +13,9 @@
   width: 4.6em;
   height: 4.6em;
   margin-right: 2.2em;
-  transition: width 0.15s ease-in-out, height 0.15s ease-in-out;
+  transition:
+    width 0.15s ease-in-out,
+    height 0.15s ease-in-out;
   fill: white;
 }
 

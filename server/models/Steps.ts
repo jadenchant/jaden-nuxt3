@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const stepsSchema = new mongoose.Schema(
   {
@@ -45,27 +45,27 @@ const stepsSchema = new mongoose.Schema(
           {
             $group: {
               _id: {
-                year: { $year: '$date' },
-                month: { $month: '$date' },
-                day: { $dayOfMonth: '$date' },
+                year: { $year: "$date" },
+                month: { $month: "$date" },
+                day: { $dayOfMonth: "$date" },
               },
-              data: { $first: '$$ROOT' },
+              data: { $first: "$$ROOT" },
             },
           },
           {
             $sort: {
-              '_id.year': 1,
-              '_id.month': 1,
-              '_id.day': 1,
+              "_id.year": 1,
+              "_id.month": 1,
+              "_id.day": 1,
             },
           },
           {
-            $replaceRoot: { newRoot: '$data' },
+            $replaceRoot: { newRoot: "$data" },
           },
         ]);
       },
     },
-  }
+  },
 );
 
-export default mongoose.model('Steps', stepsSchema, 'steps');
+export default mongoose.model("Steps", stepsSchema, "steps");

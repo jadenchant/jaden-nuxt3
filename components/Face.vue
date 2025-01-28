@@ -28,14 +28,14 @@
 </template>
 
 <script setup lang="ts">
-import { useRenderLoop } from '@tresjs/core';
+import { useRenderLoop } from "@tresjs/core";
 import {
   BasicShadowMap,
   NoToneMapping,
   SRGBColorSpace,
   Vector3,
   Color,
-} from 'three';
+} from "three";
 const { onLoop } = useRenderLoop();
 const gl = {
   shadows: true,
@@ -48,7 +48,7 @@ const gl = {
 const modelRef = shallowRef<any>(null);
 
 const onModelError = (error: Error) => {
-  console.error('Error loading model:', error);
+  console.error("Error loading model:", error);
 };
 
 onLoop(({ delta, elapsed }) => {

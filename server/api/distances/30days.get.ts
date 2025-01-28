@@ -1,7 +1,7 @@
-import { Distances } from '../../models';
+import { Distances } from "../../models";
 
 export default defineEventHandler(async (event) => {
-  console.log('Get 30Distance');
+  console.log("Get 30Distance");
 
   try {
     const data = await Distances.getPrev30();
@@ -12,14 +12,14 @@ export default defineEventHandler(async (event) => {
         units: dist.units,
       }));
     } else {
-      throw new Error('Data is null');
+      throw new Error("Data is null");
     }
   } catch (error) {
     console.dir(error);
     event.node.res.statusCode = 500;
     return {
-      code: 'Error',
-      message: 'Server Error',
+      code: "Error",
+      message: "Server Error",
     };
   }
 });

@@ -46,6 +46,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: 'Film',
+  title: "Film",
 });
 </script>

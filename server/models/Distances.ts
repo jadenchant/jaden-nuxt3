@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const distanceSchema = new mongoose.Schema(
   {
@@ -45,27 +45,27 @@ const distanceSchema = new mongoose.Schema(
           {
             $group: {
               _id: {
-                year: { $year: '$date' },
-                month: { $month: '$date' },
-                day: { $dayOfMonth: '$date' },
+                year: { $year: "$date" },
+                month: { $month: "$date" },
+                day: { $dayOfMonth: "$date" },
               },
-              data: { $first: '$$ROOT' },
+              data: { $first: "$$ROOT" },
             },
           },
           {
             $sort: {
-              '_id.year': 1,
-              '_id.month': 1,
-              '_id.day': 1,
+              "_id.year": 1,
+              "_id.month": 1,
+              "_id.day": 1,
             },
           },
           {
-            $replaceRoot: { newRoot: '$data' },
+            $replaceRoot: { newRoot: "$data" },
           },
         ]);
       },
     },
-  }
+  },
 );
 
-export default mongoose.model('Distances', distanceSchema, 'distances');
+export default mongoose.model("Distances", distanceSchema, "distances");

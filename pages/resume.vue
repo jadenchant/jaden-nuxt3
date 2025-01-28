@@ -401,13 +401,13 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: 'Resume',
+  title: "Resume",
 });
 
 useSeoMeta({
-  title: 'Resume',
-  ogTitle: 'Jaden Chant Resume',
-  author: 'Jaden Chant',
+  title: "Resume",
+  ogTitle: "Jaden Chant Resume",
+  author: "Jaden Chant",
   description: "Jaden Chant's Resume",
   ogDescription: "Jaden Chant's Resume",
 });

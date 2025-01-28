@@ -43,28 +43,28 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: 'Health Data',
+  title: "Health Data",
 });
 
 useSeoMeta({
-  title: 'Health Data',
-  ogTitle: 'Jaden Chant Health Data',
-  author: 'Jaden Chant',
+  title: "Health Data",
+  ogTitle: "Jaden Chant Health Data",
+  author: "Jaden Chant",
   description: "Jaden Chant's Walking Distance, Steps, and Flights Data",
   ogDescription: "Jaden Chant's Walking Distance, Steps, and Flights Data",
-  ogImage: 'https://jadenchant.com/_ipx/w_1500/images/jaden_nyc.png',
+  ogImage: "https://jadenchant.com/_ipx/w_1500/images/jaden_nyc.png",
 });
 
 let graphData = ref([]);
-let graphDataType = ref('');
+let graphDataType = ref("");
 
-const { data: prevData, error: prevError } = await useFetch('/api/health');
+const { data: prevData, error: prevError } = await useFetch("/api/health");
 
 onMounted(async () => {
-  const distData = await $fetch('/api/distances/30days');
+  const distData = await $fetch("/api/distances/30days");
   if (distData) {
     graphData.value = distData;
-    graphDataType.value = 'distance';
+    graphDataType.value = "distance";
   }
 });
 
@@ -73,23 +73,23 @@ const fetchGraphData = async (apiUrl: string) => {
     const data = await $fetch(apiUrl);
     graphData.value = data;
 
-    if (apiUrl.includes('distances')) {
-      graphDataType.value = 'distance';
-    } else if (apiUrl.includes('flights')) {
-      graphDataType.value = 'flights';
-    } else if (apiUrl.includes('steps')) {
-      graphDataType.value = 'steps';
+    if (apiUrl.includes("distances")) {
+      graphDataType.value = "distance";
+    } else if (apiUrl.includes("flights")) {
+      graphDataType.value = "flights";
+    } else if (apiUrl.includes("steps")) {
+      graphDataType.value = "steps";
     }
   } catch (error) {
-    console.error('Failed to fetch data:', error);
+    console.error("Failed to fetch data:", error);
   }
 };
 
 const formatDate = () => {
   const date = new Date();
-  const year = date.toLocaleString('default', { year: 'numeric' });
-  const month = date.toLocaleString('default', { month: '2-digit' });
-  const day = date.toLocaleString('default', { day: '2-digit' });
+  const year = date.toLocaleString("default", { year: "numeric" });
+  const month = date.toLocaleString("default", { month: "2-digit" });
+  const day = date.toLocaleString("default", { day: "2-digit" });
 
   return `${month}/${Number(day) - 1}/${year}`;
 };
@@ -97,12 +97,14 @@ const formatDate = () => {
 
 <style>
 .show-graph .show-graph-text::after {
-  content: '⇒';
+  content: "⇒";
   position: relative;
   opacity: 0;
   left: 0em;
   text-decoration: none;
-  transition: opacity 0.15s ease-in-out, left 0.2s ease-in-out;
+  transition:
+    opacity 0.15s ease-in-out,
+    left 0.2s ease-in-out;
 }
 
 .show-graph:hover .show-graph-text::after {

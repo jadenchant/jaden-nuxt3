@@ -14,6 +14,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: 'Costume Design',
+  title: "Costume Design",
 });
 </script>

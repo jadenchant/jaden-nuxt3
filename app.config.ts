@@ -1,9 +1,9 @@
 export default defineAppConfig({
-  title: 'Jaden Chant',
+  title: "Jaden Chant",
   theme: {
     dark: true,
     colors: {
-      primary: '#374151',
+      primary: "#374151",
     },
   },
 });
