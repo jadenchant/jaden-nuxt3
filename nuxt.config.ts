@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -22,20 +24,15 @@ export default defineNuxtConfig({
   modules: ["@nuxt/image", "@tresjs/nuxt", "@nuxtjs/device", "@nuxt/icon"],
   css: ["@/assets/css/main.css"],
 
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
-  device: {
-    refreshOnResize: true,
+  vite: {
+    plugins: [tailwindcss()],
   },
 
   icon: {
     customCollections: [{ prefix: "my-icons", dir: "./assets/icons" }],
   },
+
+  devtools: { enabled: false },
 
   compatibilityDate: "2024-07-13",
 });
