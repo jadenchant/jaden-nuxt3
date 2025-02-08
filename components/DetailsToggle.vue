@@ -1,7 +1,7 @@
 <template>
   <div :class="props.class">
     <div class="flex justify-center h-14 mb-4">
-      <button @click="toggle" class="px-16 pt-2 rounded">
+      <button @click="toggle" class="px-16 pt-2 rounded cursor-pointer">
         <h4 class="text-lg">
           {{ isOpen ? "Hide" : "Show" }}
           {{ props.buttonText ? props.buttonText : "Details" }}
