@@ -8,7 +8,7 @@
       desc="A website that allows for students to plan their major classes. It also allows for faculty to review student choices."
       img="images/stolaf-pos-form.png"
       alt="St. Olaf Program of Study Computer Science MaP"
-      link="https://github.com/jadenchant/stolaf-pos-form"
+      link="https://jadenchant.github.io/stolaf-pos-form/"
     />
     <ProjectCard
       title="Jaden's Website"
