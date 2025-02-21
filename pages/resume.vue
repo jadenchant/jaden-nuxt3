@@ -17,6 +17,7 @@
             <h4>GPA: 3.7 | Cum Laude</h4>
           </div>
           <h4>Concentration: Statistics and Data Science</h4>
+          <h4>Athletics: Four Years of NCAA DIII Swimming</h4>
         </div>
         <DetailsToggle button-text="Courses">
           <div class="ml-4 mb-4">
@@ -65,46 +66,86 @@
         <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">
           Certifications
         </h2>
-        <div class="w-full mb-6 flex flex-col md:flex-row">
-          <NuxtLink
-            to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
-            target="_blank"
-          >
-            <NuxtImg
-              src="images/aws-certified-cloud-practitioner.png"
-              alt="AWS Certified Cloud Practitioner"
-              sizes="sm:120px md:120px lg:120px"
-              format="webp"
-              preload
-          /></NuxtLink>
-          <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
-            <div
-              class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
+        <div class="flex flex-row md:flex-col">
+          <div class="w-full mb-6 flex flex-col md:flex-row">
+            <NuxtLink
+              to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
+              target="_blank"
             >
-              <h3>
-                <NuxtLink
-                  to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
-                  target="_blank"
-                  >AWS Certified Cloud Practitioner</NuxtLink
-                >
-              </h3>
-              <h3>December 2024 - Current</h3>
+              <NuxtImg
+                src="images/aws-certified-cloud-practitioner.png"
+                alt="AWS Certified Cloud Practitioner"
+                sizes="sm:120px md:120px lg:120px"
+                format="webp"
+                preload
+            /></NuxtLink>
+            <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
+              <div
+                class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
+              >
+                <h3>
+                  <NuxtLink
+                    to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
+                    target="_blank"
+                    >AWS Certified Cloud Practitioner</NuxtLink
+                  >
+                </h3>
+                <h3>December 2024 - Current</h3>
+              </div>
+              <div class="hidden md:flex justify-between">
+                <h4>
+                  ID:
+                  <NuxtLink
+                    to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
+                    target="_blank"
+                    >67522d4f316243159813896aaeee86ff</NuxtLink
+                  >
+                </h4>
+                <h4>
+                  Issued by:
+                  <NuxtLink to="https://aws.amazon.com/" target="_blank"
+                    >Amazon Web Services</NuxtLink
+                  >
+                </h4>
+              </div>
             </div>
-            <div class="hidden md:flex justify-between">
-              <h4>
-                ID:
-                <NuxtLink
-                  to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
-                  target="_blank"
-                  >67522d4f316243159813896aaeee86ff</NuxtLink
-                >
-              </h4>
-              <h4>
-                Issued by:
-                <NuxtLink to="https://aws.amazon.com/" target="_blank"
-                  >Amazon Web Services</NuxtLink
-                >
-              </h4>
+          </div>
+          <div class="w-full mb-6 flex flex-col md:flex-row">
+            <NuxtLink
+              to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
+              target="_blank"
+            >
+              <Icon name="my-icons:aha" mode="svg" size="120px" />
+            </NuxtLink>
+            <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
+              <div
+                class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
+              >
+                <h3>
+                  <NuxtLink
+                    to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
+                    target="_blank"
+                    >Basic Life Support (BLS)</NuxtLink
+                  >
+                </h3>
+                <h3>Febuary 2025 - Current</h3>
+              </div>
+              <div class="hidden md:flex justify-between">
+                <h4>
+                  ID:
+                  <NuxtLink
+                    to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
+                    target="_blank"
+                    >255417683412</NuxtLink
+                  >
+                </h4>
+                <h4>
+                  Issued by:
+                  <NuxtLink to="https://www.heart.org/en" target="_blank"
+                    >American Heart Associaion</NuxtLink
+                  >
+                </h4>
+              </div>
             </div>
           </div>
         </div>
@@ -256,7 +297,7 @@
               <li>
                 Receive specimens using
                 <NuxtLink to="https://www.epic.com/software/" target="_blank">
-                  Epic Software
+                  Epic Software (Hyperspace / Beaker)
                 </NuxtLink>
                 from Abbott Northwestern Hospital and other Allina Health
                 hospitals and clinics, allowing for improved patient care and
@@ -340,7 +381,7 @@
             <NuxtLink to="https://isocpp.org/" target="_blank">C++</NuxtLink>,
             <NuxtLink to="https://en.wikipedia.org/wiki/SQL" target="_blank"
               >SQL</NuxtLink
-            >, <NuxtLink to="https://go.dev/" target="_blank">GO</NuxtLink>,
+            >
             <NuxtLink
               to="https://developer.mozilla.org/en-US/docs/Web/HTML"
               target="_blank"
