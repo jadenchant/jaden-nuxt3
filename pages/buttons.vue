@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-full h-dvh">
-    <Toggle :toggleOn="false" />
+  <div class="w-full h-dvh">
+    <Toggle size="200" :toggleOn="false" />
   </div>
 </template>
