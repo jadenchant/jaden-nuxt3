@@ -34,7 +34,12 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "Faces",
+  title: "Jaden Face",
+});
+
+useSeoMeta({
+  title: "Jaden Face",
+  ogTitle: "Jaden's Face",
 });
 
 import { BasicShadowMap, NoToneMapping, SRGBColorSpace, Vector3 } from "three";
@@ -55,16 +60,5 @@ const onModelError = (error: Error) => {
 
 watch(modelRef, () => {
   modelRef.value.instance.position.y = -2;
-});
-</script>
-
-<script setup lang="ts">
-definePageMeta({
-  title: "Jaden Face",
-});
-
-useSeoMeta({
-  title: "Jaden Face",
-  ogTitle: "Jaden's Face",
 });
 </script>
