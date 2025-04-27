@@ -26,4 +26,12 @@
 definePageMeta({
   title: "Flowers",
 });
+
+useSeoMeta({
+  title: "flowers",
+  ogTitle: "Jaden's Flowers",
+  author: "Jaden Chant",
+  description: "Jaden's 3D Flower Models",
+  ogDescription: "Jaden's 3D Flower Models",
+});
 </script>

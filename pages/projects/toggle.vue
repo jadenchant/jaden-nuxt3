@@ -1,5 +1,6 @@
 <template>
   <div class="w-full h-98 flex flex-col justify-around items-center">
+    <p>This only works on desktop (no mobile)</p>
     <Toggle size="50" strokeWidth="10" :toggleOn="false" />
     <Toggle size="75" strokeWidth="10" :toggleOn="false" />
     <Toggle size="100" strokeWidth="10" :toggleOn="false" />

@@ -57,3 +57,14 @@ watch(modelRef, () => {
   modelRef.value.instance.position.y = -2;
 });
 </script>
+
+<script setup lang="ts">
+definePageMeta({
+  title: "Jaden Face",
+});
+
+useSeoMeta({
+  title: "Jaden Face",
+  ogTitle: "Jaden's Face",
+});
+</script>

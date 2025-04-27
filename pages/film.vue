@@ -48,4 +48,12 @@
 definePageMeta({
   title: "Film",
 });
+
+useSeoMeta({
+  title: "Costume Design",
+  ogTitle: "Costume Design",
+  author: "Jaden Chant",
+  description: "Costume Design Fanny Pack",
+  ogDescription: "Costume Design Fanny Pack",
+});
 </script>
