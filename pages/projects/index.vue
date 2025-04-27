@@ -39,6 +39,14 @@
       link="https://jadenchant.github.io/pages/projects/nfl_fantasy_pt/"
     />
     <ProjectCard
+      title="Toggle SVG Animation"
+      desc="Toggle SVG Animation using Vue.js/Nuxt.js and TailwindCSS"
+      img="images/toggle.png"
+      alt="Toggle"
+      link="/projects/toggle"
+      internal
+    />
+    <ProjectCard
       title="MLB Statistics"
       desc="Shiny app for MLB Most Valuable Player, Rookie of the Year, and Cy Young award statistics."
       img="images/mlb-stats.png"
