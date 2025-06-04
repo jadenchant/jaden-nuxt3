@@ -167,30 +167,27 @@
           <DetailsToggle class="md:ml-4">
             <ul class="list-disc ml-4">
               <li>
-                Developed critical components of a new internal moderation tool
-                using
+                Developed production-ready
                 <NuxtLink to="https://react.dev/" target="_blank"
                   ><span class="font-bold underline">React.js</span></NuxtLink
                 >
-                and
+                components for a new internal moderation tool using
                 <NuxtLink to="https://www.typescriptlang.org/" target="_blank"
                   ><span class="font-bold underline">Typescript</span></NuxtLink
-                >, enhancing user content management and operational workflow
+                >, enhancing user generated content management and moderation
               </li>
               <li>
-                Engineered and implemented a suite of
-                <span class="font-bold underline">unit tests</span> for the
-                Target Finds Team, significantly enhancing code reliability and
-                maintainability
+                Engineered and implemented
+                <span class="font-bold underline">unit tests</span>
+                improving code quality and maintainability
               </li>
               <li>
-                Actively collaborated with a team of Front End Developers on
-                daily sprint tasks, enhancing team efficiency and feature
-                integration speed
+                Collaborated in an Agile environment with daily standups and
+                sprint planning for efficient feature delivery
               </li>
               <li>
-                Presented detailed project developments and achievements to a
-                group of interns and senior leaders
+                Presented project achievements to senior leadership and
+                stakeholders
               </li>
             </ul>
           </DetailsToggle>
@@ -213,27 +210,20 @@
           <DetailsToggle class="md:ml-4">
             <ul class="list-disc ml-4">
               <li>
-                Supported critical business analytics by managing real-time
-                reporting on data loads and delays, enhancing operational
-                decision-making
+                Implemented real-time data reporting systems to monitor ETL
+                processes and optimize operational decision-making
               </li>
               <li>
-                Conducted detailed analysis of metadata inconsistencies,
-                optimizing <span class="font-bold underline">SQL</span> table
-                processes and
-                <NuxtLink to="https://www.tableau.com/" target="_blank"
-                  ><span class="font-bold underline">Tableau</span></NuxtLink
-                >
-                dashboards
+                Built and optimized <span class="font-bold underline">SQL</span>
+                efficiency and resolve metadata inconsistencies
               </li>
               <li>
                 Developed and implemented comprehensive test cases for file
-                extraction processes, improving data extraction accuracy
+                extraction processes, improving reliability
               </li>
               <li>
-                Participated in daily operations following Agile Workflows,
-                contributing to enhanced team agility and project management
-                effectiveness
+                Participated in Agile workflow methodologies including sprint
+                planning, backlog refinement, and retrospectives
               </li>
             </ul>
           </DetailsToggle>
@@ -295,25 +285,19 @@
           <DetailsToggle class="md:ml-4">
             <ul class="list-disc ml-4">
               <li>
-                Receive specimens using
+                Operate complex laboratory systems,
                 <NuxtLink to="https://www.epic.com/software/" target="_blank">
                   Epic Software (Hyperspace / Beaker)
                 </NuxtLink>
-                from Abbott Northwestern Hospital and other Allina Health
-                hospitals and clinics, allowing for improved patient care and
-                specimen tracking
+                by handling data entry and tracking
               </li>
               <li>
-                Operate
-                <NuxtLink to="https://www.roche.com/" target="_blank">
-                  Roche Laboratory Equipment
-                </NuxtLink>
-                like the Bulk Loading Input Module and other Cobas Equipment,
-                creating a streamlined chemistry workflow
+                Apply technical troubleshooting skills to laboratory equipment
+                workflows
               </li>
               <li>
-                Process research specimens using precise centrifugation and
-                aliquotation, improving accuracy and immediacy of results
+                Utilize analytical methods to process research specimens,
+                ensuring data integrity and precision in experimental outcomes
               </li>
             </ul>
           </DetailsToggle>
@@ -335,15 +319,19 @@
             <ul class="list-disc ml-4">
               <li>
                 Directed 3D print and design operations at the Digital
-                Scholarship Center, significantly elevating the center’s
-                creative and technical output
+                Scholarship Center, elevating the center’s creative output
               </li>
               <li>
-                Educated and mentored student interns on 3D printing techniques
-                and design creation using
+                Maintained and troubleshooted 3D printers to ensure consistent,
+                high-quality operation and minimal downtime
+              </li>
+              <li>
+                Educated and mentored students on 3D printing techniques and
+                design creation using
                 <NuxtLink to="https://www.tinkercad.com/" target="_blank"
                   >TinkerCad</NuxtLink
-                >, insighting skill development and innovation
+                >
+                development and innovation
               </li>
               <li>
                 Provided expert guidance on digital and creative projects,
@@ -359,7 +347,7 @@
                   target="_blank"
                   >ArcGIS</NuxtLink
                 >
-                to support student project success and skill acquisition
+                to support student project success
               </li>
             </ul>
           </DetailsToggle>
@@ -381,7 +369,7 @@
             <NuxtLink to="https://isocpp.org/" target="_blank">C++</NuxtLink>,
             <NuxtLink to="https://en.wikipedia.org/wiki/SQL" target="_blank"
               >SQL</NuxtLink
-            >
+            >,
             <NuxtLink
               to="https://developer.mozilla.org/en-US/docs/Web/HTML"
               target="_blank"
@@ -417,21 +405,12 @@
             <NuxtLink to="https://www.mongodb.com/" target="_blank"
               >MongoDB</NuxtLink
             >,
-            <NuxtLink to="https://threejs.org/" target="_blank"
-              >Three.js</NuxtLink
-            >,
             <NuxtLink to="https://www.tableau.com/" target="_blank"
               >Tableau</NuxtLink
-            >,
-            <NuxtLink to="https://www.figma.com/" target="_blank"
-              >Figma</NuxtLink
-            >,
-            <NuxtLink to="https://www.tidyverse.org/" target="_blank"
-              >Tidyverse</NuxtLink
             >
           </h4>
           <h4>
-            Topics: RESTful APIs, SEO, Machine Learning, Data Scraping, Unit
+            Topics: RESTful APIs, CI/CD, Machine Learning, Data Scraping, Unit
             Testing
           </h4>
         </div>
