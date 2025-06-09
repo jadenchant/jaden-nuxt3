@@ -8,7 +8,7 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.2.23",
+    "@iconify-json/material-symbols": "^1.2.25",
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/icon": "^1.13.0",
     "@nuxtjs/device": "^3.2.4",
