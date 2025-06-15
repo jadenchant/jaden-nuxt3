@@ -50,10 +50,10 @@ definePageMeta({
 });
 
 useSeoMeta({
-  title: "Costume Design",
-  ogTitle: "Costume Design",
+  title: "Film",
+  ogTitle: "Film",
   author: "Jaden Chant",
-  description: "Costume Design Fanny Pack",
-  ogDescription: "Costume Design Fanny Pack",
+  description: "Favorite films from classes",
+  ogDescription: "Favorite films from classes",
 });
 </script>
