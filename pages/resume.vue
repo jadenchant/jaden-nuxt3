@@ -17,7 +17,14 @@
             <h4>GPA: 3.7 | Cum Laude</h4>
           </div>
           <h4>Concentration: Statistics and Data Science</h4>
-          <h4>Athletics: Four Years of NCAA DIII Swimming</h4>
+          <h4>
+            Athletics:
+            <NuxtLink
+              to="https://athletics.stolaf.edu/sports/mens-swimming-and-diving/roster/jaden-chant/12664"
+              target="_blank"
+              >Four Years of NCAA DIII Swimming</NuxtLink
+            >
+          </h4>
         </div>
         <DetailsToggle button-text="Courses">
           <div class="ml-4 mb-4">
@@ -42,8 +49,14 @@
                 Algorithms for Decision Making</NuxtLink
               >,
               <NuxtLink to="https://jadenchant.github.io/" target="_blank">
-                Data Science II </NuxtLink
-              >, Data Visualization,
+                Data Science II</NuxtLink
+              >,
+              <NuxtLink
+                to="https://public.tableau.com/app/profile/jadenchant/vizzes"
+                target="_blank"
+              >
+                Data Visualization</NuxtLink
+              >,
               <NuxtLink
                 to="https://jadenchant.github.io/pages/projects/nfl_fantasy_pt/"
                 target="_blank"
@@ -240,7 +253,7 @@
             <h3>May - November 2021</h3>
           </div>
           <div class="flex justify-between md:ml-4">
-            <h4>Lead Frontend Developer</h4>
+            <h4>Frontend Developer</h4>
             <h4>Bloomington, MN</h4>
           </div>
           <DetailsToggle class="md:ml-4">
@@ -279,15 +292,15 @@
             <h3>September 2024 - Current</h3>
           </div>
           <div class="flex justify-between md:ml-4">
-            <h4>Lab Assistant</h4>
+            <h4>Laboratory Assistant</h4>
             <h4>Minneapolis, MN</h4>
           </div>
-          <DetailsToggle class="md:ml-4">
+          <DetailsToggle class="">
             <ul class="list-disc ml-4">
               <li>
-                Operate complex laboratory systems,
+                Operate a laboratory information systems,
                 <NuxtLink to="https://www.epic.com/software/" target="_blank">
-                  Epic Software (Hyperspace / Beaker)
+                  Epic Software (Beaker)
                 </NuxtLink>
                 by handling data entry and tracking
               </li>
@@ -315,7 +328,7 @@
             <h4>Digital Scholarship Center Manager</h4>
             <h4>Northfield, MN</h4>
           </div>
-          <DetailsToggle class="md:ml-4">
+          <DetailsToggle class="">
             <ul class="list-disc ml-4">
               <li>
                 Directed 3D print and design operations at the Digital

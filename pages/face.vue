@@ -1,7 +1,11 @@
 <template>
   <title>Faces</title>
 
-  <TresCanvas v-bind="gl" class="!touch-auto overflow-y-hidden" window-size>
+  <TresCanvas
+    v-bind="gl"
+    class="!touch-auto overflow-y-hidden overflow-x-hidden"
+    window-size
+  >
     <TresPerspectiveCamera
       :position="new Vector3(0, 1, 7)"
       :fov="75"

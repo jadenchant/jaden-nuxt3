@@ -1,7 +1,7 @@
 <template>
   <title>Projects</title>
   <div
-    class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 justify-center lg:ml-4 md:mt-6 lg:mt-8"
+    class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center lg:ml-4 md:mt-6 lg:mt-8"
   >
     <ProjectCard
       title="St. Olaf Program of Study"
@@ -17,13 +17,7 @@
       alt="Jaden Chant's Website"
       link="https://github.com/jadenchant/jaden-nuxt3"
     />
-    <ProjectCard
-      title="Elevator.zone"
-      desc="Elevator experience created using Three.js and Svelte"
-      img="images/elevator.png"
-      alt="Hotel Lobby Elevator Experience"
-      link="https://elevator.zone"
-    />
+
     <ProjectCard
       title="IMDB Review Sentiment Prediction"
       desc="Long Short Term Memory Machine Learning model used to predict sentiment from IMDB movie reviews."
@@ -37,6 +31,13 @@
       img="images/nfl-stats.png"
       alt="NFL Fantasy Football Statistics Linear Regression Model Next Season Predictions"
       link="https://jadenchant.github.io/pages/projects/nfl_fantasy_pt/"
+    />
+    <ProjectCard
+      title="Elevator.zone"
+      desc="Elevator experience created using Three.js and Svelte"
+      img="images/elevator.png"
+      alt="Hotel Lobby Elevator Experience"
+      link="https://elevator.zone"
     />
     <ProjectCard
       title="Toggle SVG Animation"
