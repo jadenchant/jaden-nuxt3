@@ -79,11 +79,41 @@
         <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">
           Certifications
         </h2>
-        <div class="flex flex-row md:flex-col">
-          <div class="w-full mb-6 flex flex-col md:flex-row">
+        <div class="grid grid-cols-2 md:flex md:flex-col">
+          <div
+            class="w-full flex flex-col justify-items-center justify-center md:flex-row md:mb-6"
+          >
+            <NuxtImg
+              src="images/epic.png"
+              alt="Epic Logo"
+              sizes="sm:120px md:120px lg:120px"
+              format="webp"
+              preload
+              class=""
+            />
+            <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
+              <div
+                class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
+              >
+                <h3>Epic Beaker Clinical Pathology Analyst</h3>
+                <h3>June 2025 - June 2029</h3>
+              </div>
+              <div class="hidden md:flex justify-between">
+                <h4>ID: 1488536556</h4>
+                <h4>
+                  Issued by:
+                  <NuxtLink to="https://www.epic.com/" target="_blank"
+                    >Epic Systems</NuxtLink
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-full mb-6 flex flex-col justify-center md:flex-row">
             <NuxtLink
               to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
               target="_blank"
+              class="justify-items-center"
             >
               <NuxtImg
                 src="images/aws-certified-cloud-practitioner.png"
@@ -103,7 +133,7 @@
                     >AWS Certified Cloud Practitioner</NuxtLink
                   >
                 </h3>
-                <h3>December 2024 - Current</h3>
+                <h3>December 2024 - December 2027</h3>
               </div>
               <div class="hidden md:flex justify-between">
                 <h4>
@@ -123,10 +153,11 @@
               </div>
             </div>
           </div>
-          <div class="w-full mb-6 flex flex-col md:flex-row">
+          <div class="w-full mb-6 flex flex-col justify-center md:flex-row">
             <NuxtLink
               to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
               target="_blank"
+              class="justify-items-center"
             >
               <Icon name="my-icons:aha" mode="svg" size="120px" />
             </NuxtLink>
@@ -141,7 +172,7 @@
                     >Basic Life Support (BLS)</NuxtLink
                   >
                 </h3>
-                <h3>Febuary 2025 - Current</h3>
+                <h3>Febuary 2025 - Febuary 2027</h3>
               </div>
               <div class="hidden md:flex justify-between">
                 <h4>
@@ -382,20 +413,10 @@
             <NuxtLink to="https://isocpp.org/" target="_blank">C++</NuxtLink>,
             <NuxtLink to="https://en.wikipedia.org/wiki/SQL" target="_blank"
               >SQL</NuxtLink
-            >,
-            <NuxtLink
-              to="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              target="_blank"
-              >HTML5</NuxtLink
-            >,
-            <NuxtLink
-              to="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              target="_blank"
-              >CSS</NuxtLink
             >
           </h4>
           <h4 class="mb-2 md:mb-4">
-            Frameworks:
+            Frontend:
             <NuxtLink to="https://react.dev/" target="_blank">React.js</NuxtLink
             >,
             <NuxtLink to="https://nuxt.com/" target="_blank"
@@ -403,28 +424,44 @@
             >,
             <NuxtLink to="https://tailwindcss.com/" target="_blank"
               >Tailwind CSS</NuxtLink
-            >
+            >,
+            <NuxtLink
+              to="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              >HTML5/CSS</NuxtLink
+            >,
           </h4>
           <h4 class="mb-2 md:mb-4">
-            Tools:
-            <NuxtLink to="https://git-scm.com/" target="_blank">Git</NuxtLink>,
-            <NuxtLink to="https://github.com/" target="_blank">GitHub</NuxtLink
+            Backend:
+            <NuxtLink to="https://www.mongodb.com/" target="_blank"
+              >MongoDB</NuxtLink
             >,
-            <NuxtLink to="https://aws.amazon.com/" target="_blank">AWS</NuxtLink
+            <NuxtLink to="https://en.wikipedia.org/wiki/SQL" target="_blank"
+              >SQL</NuxtLink
+            >
+          </h4>
+
+          <h4 class="mb-2 md:mb-4">
+            Cloud and DevOps:
+            <NuxtLink to="https://aws.amazon.com/" target="_blank"
+              >Amazon Web Services</NuxtLink
             >,
             <NuxtLink to="https://cloud.google.com/?hl=en" target="_blank"
               >Google Cloud Platform</NuxtLink
             >,
-            <NuxtLink to="https://www.mongodb.com/" target="_blank"
-              >MongoDB</NuxtLink
+            <NuxtLink to="https://git-scm.com/" target="_blank">Git</NuxtLink>,
+            <NuxtLink to="https://github.com/" target="_blank">GitHub</NuxtLink>
+          </h4>
+          <h4>
+            Tools and Topics:
+            <NuxtLink
+              to="https://www.epic.com/software/specialties/"
+              target="_blank"
+              >Epic Beaker</NuxtLink
             >,
             <NuxtLink to="https://www.tableau.com/" target="_blank"
               >Tableau</NuxtLink
-            >
-          </h4>
-          <h4>
-            Topics: RESTful APIs, CI/CD, Machine Learning, Data Scraping, Unit
-            Testing
+            >, Data Visualization, Machine Learning, CI/CD, Unit Testing
           </h4>
         </div>
       </div>
