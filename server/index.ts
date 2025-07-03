@@ -1,7 +1,6 @@
-import dotenv from "dotenv";
+import "dotenv/config";
 import mongoose from "mongoose";
 
-dotenv.config();
 mongoose.set("strictQuery", false);
 
 export default async () => {

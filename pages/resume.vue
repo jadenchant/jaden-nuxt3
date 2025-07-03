@@ -22,7 +22,7 @@
             <NuxtLink
               to="https://athletics.stolaf.edu/sports/mens-swimming-and-diving/roster/jaden-chant/12664"
               target="_blank"
-              >Four Years of NCAA DIII Swimming</NuxtLink
+              >DIII Swimming</NuxtLink
             >
           </h4>
         </div>

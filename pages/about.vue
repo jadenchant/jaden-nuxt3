@@ -11,6 +11,15 @@
         >
       </p>
       <p class="z-10">
+        Laboratory Assistant @
+        <NuxtLink
+          to="https://www.allinahealth.org/"
+          target="_blank"
+          class="underline"
+          >Allina Health</NuxtLink
+        >
+      </p>
+      <p class="z-10">
         Software Engineering Intern @
         <NuxtLink
           to="https://www.target.com/finds"
