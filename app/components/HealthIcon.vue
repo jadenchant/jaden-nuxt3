@@ -1,12 +1,18 @@
 <template>
   <div class="absolute z-0" :class="$device.isMobile ? 'icon-sm' : 'icon-lg'">
-    <Icon name="my-icons:heart" mode="svg" class="heart" />
-    <Icon name="my-icons:pulse" mode="svg" class="pulse pulse1" />
-    <Icon name="my-icons:pulse" mode="svg" class="pulse pulse2" />
+    <Heart class="heart" />
+    <Pulse class="pulse pulse1" />
+    <Pulse class="pulse pulse2" />
+    <!-- <Icon name="icons:heart" mode="svg" class="heart" />
+    <Icon name="icons:pulse" mode="svg" class="pulse pulse1" />
+    <Icon name="icons:pulse" mode="svg" class="pulse pulse2" /> -->
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Heart from "~/assets/icons/Heart.vue";
+import Pulse from "~/assets/icons/Pulse.vue";
+</script>
 
 <style>
 .icon-lg svg.heart {

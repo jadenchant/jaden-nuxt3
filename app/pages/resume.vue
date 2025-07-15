@@ -159,7 +159,7 @@
               target="_blank"
               class="justify-items-center"
             >
-              <Icon name="my-icons:aha" mode="svg" size="120px" />
+              <AHA class="w-[120px] h-[120px]" />
             </NuxtLink>
             <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
               <div
@@ -470,6 +470,8 @@
 </template>
 
 <script setup lang="ts">
+import AHA from "~/assets/icons/AHA.vue";
+
 definePageMeta({
   title: "Resume",
 });

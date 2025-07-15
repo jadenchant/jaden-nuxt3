@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import { resolve } from "path";
 
 export default defineNuxtConfig({
   app: {
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "node-server",
-    plugins: ["~/server/index.ts"],
+    plugins: [resolve(__dirname, "server/index.ts")],
     compressPublicAssets: true,
   },
 
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    customCollections: [{ prefix: "my-icons", dir: "./assets/icons" }],
+    customCollections: [{ prefix: "my-icons", dir: "app/assets/icons" }],
   },
 
   devtools: { enabled: false },

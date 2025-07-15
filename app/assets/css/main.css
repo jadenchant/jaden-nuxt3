@@ -6,7 +6,7 @@
   font-weight: 300;
   src:
     local(""),
-    url("@/assets/fonts/TitilliumWeb-Regular.ttf") format("ttf");
+    url("../fonts/TitilliumWeb-Regular.ttf") format("ttf");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-weight: 300;
   src:
     local(""),
-    url("@/assets/fonts/TitilliumWeb-Italic.ttf") format("truetype");
+    url("../fonts/TitilliumWeb-Italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -24,7 +24,7 @@
   font-weight: 500;
   src:
     local(""),
-    url("@/assets/fonts/TitilliumWeb-Bold.ttf") format("truetype");
+    url("../fonts/TitilliumWeb-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 400;
   src:
     local(""),
-    url("@/assets/fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+    url("../fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
 }
 
 @layer base {
