@@ -1,6 +1,6 @@
-# Nuxt 3 Jaden Chant
+# Jaden Chant Nuxt
 
-Using [Nuxt3](https://nuxt.com/), [MongoDB/MongooseDB](https://mongoosejs.com/docs/), [Health Auto Export](https://www.healthexportapp.com/), [Tres.js](https://tresjs.org/), [D3.js](https://d3js.org/), and [Tailwind CSS](https://tailwindcss.com/)
+Using [Nuxt4](https://nuxt.com/), [MongoDB/MongooseDB](https://mongoosejs.com/docs/), [Health Auto Export](https://www.healthexportapp.com/), [Tres.js](https://tresjs.org/), [D3.js](https://d3js.org/), and [Tailwind CSS](https://tailwindcss.com/)
 
 ## Dev environment
 

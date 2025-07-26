@@ -12,10 +12,10 @@
     />
     <ProjectCard
       title="Jaden's Website"
-      desc="This website created using Nuxt3.js, MongoDB, Tailwind, Health Auto Export, Tres.js, and D3.js."
+      desc="This website created using Nuxt4.js, MongoDB, Tailwind, Health Auto Export, Tres.js, and D3.js."
       img="images/jaden-web.png"
       alt="Jaden Chant's Website"
-      link="https://github.com/jadenchant/jaden-nuxt3"
+      link="https://github.com/jadenchant/jaden-nuxt"
     />
 
     <ProjectCard
