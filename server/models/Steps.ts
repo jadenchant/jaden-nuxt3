@@ -19,14 +19,14 @@ const stepsSchema = new mongoose.Schema(
     statics: {
       getPrev() {
         const last = new Date();
-        last.setDate(last.getDate() - 2);
+        last.setDate(last.getDate() - 3);
         const now = new Date();
         return this.findOne({
           date: {
             $gt: last,
             $lt: now,
           },
-        });
+        }).sort({ date: -1 });
       },
       getPrev30() {
         const last = new Date();

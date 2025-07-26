@@ -1,7 +1,7 @@
 <template>
   <title>Health Data</title>
   <h1 class="text-2xl md:text-4xl mb-4 lg:ml-4">
-    Health Data {{ formatDate() }}
+    Health Data {{ formatDate(prevData.date) }}
   </h1>
   <div class="relative lg:flex z-10">
     <div v-if="!prevError" class="text-xl md:text-2xl lg:text-3xl ml-4 lg:ml-8">
@@ -10,7 +10,7 @@
         @click="fetchGraphData('/api/distances/30days')"
       >
         <p class="show-graph-text py-2 lg:py-4">
-          Distance: {{ prevData?.distance.distance }} mi
+          Distance: {{ prevData?.distance.count }} mi
         </p>
       </div>
       <div
@@ -18,7 +18,7 @@
         @click="fetchGraphData('/api/steps/30days')"
       >
         <p class="show-graph-text py-2 lg:py-4">
-          Steps: {{ prevData?.steps.steps.toLocaleString() }} steps
+          Steps: {{ prevData?.steps.count.toLocaleString() }} steps
         </p>
       </div>
       <div
@@ -26,7 +26,7 @@
         @click="fetchGraphData('/api/flights/30days')"
       >
         <p class="show-graph-text py-2 lg:py-4">
-          Flights: {{ prevData?.flights.flights }} flights
+          Flights: {{ prevData?.flights.count }} flights
         </p>
       </div>
     </div>
@@ -54,13 +54,17 @@ useSeoMeta({
   ogDescription: "Jaden Chant's Walking Distance, Steps, and Flights Data",
 });
 
-let graphData = ref([]);
+type DistanceData = { date: any; distance: any; units: any };
+type FlightsData = { date: any; flights: any; units: any };
+type StepsData = { date: any; steps: any; units: any };
+
+let graphData = ref<DistanceData[] | FlightsData[] | StepsData[]>([]);
 let graphDataType = ref("");
 
 const { data: prevData, error: prevError } = await useFetch("/api/health");
 
 onMounted(async () => {
-  const distData = await $fetch("/api/distances/30days");
+  const distData = await $fetch<DistanceData[]>("/api/distances/30days");
   if (distData) {
     graphData.value = distData;
     graphDataType.value = "distance";
@@ -69,7 +73,9 @@ onMounted(async () => {
 
 const fetchGraphData = async (apiUrl: string) => {
   try {
-    const data = await $fetch(apiUrl);
+    const data = await $fetch<DistanceData[] | FlightsData[] | StepsData[]>(
+      apiUrl,
+    );
     graphData.value = data;
 
     if (apiUrl.includes("distances")) {
@@ -84,13 +90,13 @@ const fetchGraphData = async (apiUrl: string) => {
   }
 };
 
-const formatDate = () => {
-  const date = new Date();
+const formatDate = (raw: Date) => {
+  const date = new Date(raw);
   const year = date.toLocaleString("default", { year: "numeric" });
   const month = date.toLocaleString("default", { month: "2-digit" });
   const day = date.toLocaleString("default", { day: "2-digit" });
 
-  return `${month}/${Number(day) - 1}/${year}`;
+  return `${month}/${Number(day)}/${year}`;
 };
 </script>
 

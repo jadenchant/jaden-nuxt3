@@ -17,16 +17,17 @@ export default defineEventHandler(async (event) => {
     }
 
     return {
+      date: distance.date,
       distance: {
-        distance: distance.distance,
+        count: distance.distance,
         units: distance.units,
       },
       flights: {
-        flights: flights.flights,
+        count: flights.flights,
         units: flights.units,
       },
       steps: {
-        steps: steps.steps,
+        count: steps.steps,
         units: steps.units,
       },
     };
