@@ -10,6 +10,8 @@ Background Color: #374151
 
 ## Deployment
 
-Autodeploy to Google Cloud Run
+GitHub trigger Google Cloud Build
+
+Deployed to Google Cloud Run
 
 Remember .env variables
