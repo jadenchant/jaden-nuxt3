@@ -13,7 +13,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    mongoUrl: process.env.MONGO_URL,
+    mongoURL: process.env.MONGO_URL,
+    spotifyID: process.env.SPOTIFY_CLIENT_ID,
+    spotifySecret: process.env.SPOTIFY_CLIENT_SECRET,
+    spotifyRedirectUri: process.env.SPOTIFY_REDIRECT_URI,
+    spotifyRefresh: process.env.SPOTIFY_REFRESH_TOKEN,
   },
 
   nitro: {
@@ -35,5 +39,5 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
-  compatibilityDate: "2024-07-13",
+  compatibilityDate: "2025-07-26",
 });
