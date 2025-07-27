@@ -8,22 +8,25 @@ export default defineEventHandler(async (event) => {
 
   const config = useRuntimeConfig(event);
 
-  const response: any = await $fetch("https://accounts.spotify.com/api/token", {
-    method: "POST",
-    body: new URLSearchParams({
-      grant_type: "authorization_code",
-      code,
-      redirect_uri: config.spotifyRedirectUri,
-    }),
-    headers: {
-      Authorization:
-        "Basic " +
-        Buffer.from(`${config.spotifyID}:${config.spotifySecret}`).toString(
-          "base64",
-        ),
-      "Content-Type": "application/x-www-form-urlencoded",
+  const response: resToken = await $fetch(
+    "https://accounts.spotify.com/api/token",
+    {
+      method: "POST",
+      body: new URLSearchParams({
+        grant_type: "authorization_code",
+        code,
+        redirect_uri: config.spotifyRedirectUri,
+      }),
+      headers: {
+        Authorization:
+          "Basic " +
+          Buffer.from(`${config.spotifyID}:${config.spotifySecret}`).toString(
+            "base64",
+          ),
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
     },
-  });
+  );
 
   const spotifyToken = new SpotifyToken({
     token: response.access_token,

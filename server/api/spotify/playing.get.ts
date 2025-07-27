@@ -6,16 +6,19 @@ export default defineEventHandler(async (event) => {
   try {
     const token = await getToken(config);
 
-    const response = await $fetch(
-      "https://api.spotify.com/v1/me/player/currently-playing",
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
+    if (token) {
+      const response = await $fetch(
+        "https://api.spotify.com/v1/me/player/currently-playing",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         },
-      },
-    );
-
-    return response;
+      );
+      return response;
+    } else {
+      throw new Error("Did NOT Receive Active Token");
+    }
   } catch (error) {
     console.dir(error);
     event.node.res.statusCode = 500;

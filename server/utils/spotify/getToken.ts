@@ -1,22 +1,18 @@
+import type { RuntimeConfig } from "nuxt/schema";
 import { SpotifyToken } from "../../models";
 
-export async function getToken(config: {
-  spotifyID: string;
-  spotifySecret: string;
-  spotifyRefresh: string;
-}): Promise<any> {
+export async function getToken(config: RuntimeConfig): Promise<string> {
   const data = await SpotifyToken.getToken();
   if (data?.token) {
     return data.token;
   } else {
-    const response: any = await $fetch(
+    const response: resToken = await $fetch(
       "https://accounts.spotify.com/api/token",
       {
         method: "POST",
         body: new URLSearchParams({
           grant_type: "refresh_token",
           refresh_token: config.spotifyRefresh,
-          client_id: config.spotifyID,
         }),
         headers: {
           Authorization:

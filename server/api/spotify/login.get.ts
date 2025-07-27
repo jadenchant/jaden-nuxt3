@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig(event);
+  const config = useRuntimeConfig();
   const scope = [
     "user-read-currently-playing",
     "user-read-playback-state",
