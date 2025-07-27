@@ -1,10 +1,8 @@
 import { getToken } from "../../utils/spotify/getToken";
 
 export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig(event);
-
   try {
-    const token = await getToken(config);
+    const token = await getToken();
 
     if (token) {
       const response = await $fetch(

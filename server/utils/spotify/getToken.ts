@@ -1,7 +1,8 @@
-import type { RuntimeConfig } from "nuxt/schema";
 import { SpotifyRefresh, SpotifyToken } from "../../models";
 
-export async function getToken(config: RuntimeConfig): Promise<string> {
+export async function getToken(): Promise<string> {
+  const config = useRuntimeConfig();
+
   const tokenData = await SpotifyToken.getToken();
   if (tokenData?.token) {
     return tokenData.token;
