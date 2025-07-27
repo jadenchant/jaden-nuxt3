@@ -5,8 +5,6 @@ export default defineEventHandler(async (event) => {
     "user-read-playback-state",
   ].join(" ");
 
-  console.log("config.spotifyID: " + config.spotifyID);
-
   const redirect = `https://accounts.spotify.com/authorize?response_type=code&client_id=${config.spotifyID}&scope=${encodeURIComponent(
     scope,
   )}&redirect_uri=${encodeURIComponent(config.spotifyRedirectUri)}`;

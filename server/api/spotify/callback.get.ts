@@ -1,4 +1,4 @@
-import { SpotifyToken } from "~~/server/models";
+import { SpotifyToken, SpotifyRefresh } from "~~/server/models";
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
@@ -32,11 +32,14 @@ export default defineEventHandler(async (event) => {
     token: response.access_token,
   });
 
-  const spotifyTokenSave = await spotifyToken.save();
+  const spotifyRefresh = new SpotifyRefresh({
+    token: response.refresh_token,
+  });
 
-  console.log("Refresh Token:", response.refresh_token);
+  const spotifyTokenSave = await spotifyToken.save();
+  const spotifyRefreshSave = await spotifyRefresh.save();
 
   return {
-    message: `Tokens Retreived from Spotify and ${spotifyTokenSave ? "Saved to Database" : "NOT Saved to Database"}`,
+    message: `Tokens Retreived from Spotify and ${spotifyTokenSave && spotifyRefreshSave ? "Saved to Database" : "NOT Saved to Database"}`,
   };
 });
