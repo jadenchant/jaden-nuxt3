@@ -8,7 +8,7 @@ export default defineEventHandler(async (event: any) => {
     const healthAPIKey = getHeader(event, "HEALTH_API");
 
     if (process.env.HEALTH_API !== healthAPIKey) {
-      throw new Error("INVALID API KEY");
+      throw new Error("INVALID HEALTH API KEY");
     } else {
       const body = await readBody(event);
       const data = body.data.metrics;
