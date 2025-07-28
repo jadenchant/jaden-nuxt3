@@ -1,8 +1,6 @@
 import { SpotifyRefresh, SpotifyToken } from "../../models";
 
 export async function getToken(): Promise<string> {
-  const config = useRuntimeConfig();
-
   const tokenData = await SpotifyToken.getToken();
   if (tokenData?.token) {
     return tokenData.token;
@@ -22,7 +20,7 @@ export async function getToken(): Promise<string> {
             Authorization:
               "Basic " +
               Buffer.from(
-                `${config.spotifyID}:${config.spotifySecret}`,
+                `${process.env.SPOTIFY_CLIENT_ID}:${process.env.SPOTIFY_CLIENT_SECRET}`,
               ).toString("base64"),
             "Content-Type": "application/x-www-form-urlencoded",
           },

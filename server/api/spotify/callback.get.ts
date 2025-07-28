@@ -6,8 +6,6 @@ export default defineEventHandler(async (event) => {
 
   if (!code) return { error: "Missing Code From Spotify" };
 
-  const config = useRuntimeConfig(event);
-
   const response: resToken = await $fetch(
     "https://accounts.spotify.com/api/token",
     {
@@ -15,14 +13,14 @@ export default defineEventHandler(async (event) => {
       body: new URLSearchParams({
         grant_type: "authorization_code",
         code,
-        redirect_uri: config.spotifyRedirectUri,
+        redirect_uri: process.env.SPOTIFY_REDIRECT_URI as string,
       }),
       headers: {
         Authorization:
           "Basic " +
-          Buffer.from(`${config.spotifyID}:${config.spotifySecret}`).toString(
-            "base64",
-          ),
+          Buffer.from(
+            `${process.env.SPOTIFY_CLIENT_ID}:${process.env.SPOTIFY_CLIENT_SECRET}`,
+          ).toString("base64"),
         "Content-Type": "application/x-www-form-urlencoded",
       },
     },

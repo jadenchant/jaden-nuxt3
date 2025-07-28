@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     spotifyID: process.env.SPOTIFY_CLIENT_ID,
     spotifySecret: process.env.SPOTIFY_CLIENT_SECRET,
     spotifyRedirectUri: process.env.SPOTIFY_REDIRECT_URI,
-    spotifyRefresh: process.env.SPOTIFY_REFRESH_TOKEN,
   },
 
   nitro: {
