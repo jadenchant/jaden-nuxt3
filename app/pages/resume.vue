@@ -320,7 +320,7 @@
                 >Allina Health</NuxtLink
               >
             </h3>
-            <h3>September 2024 - Current</h3>
+            <h3>September 2024 - August 2025</h3>
           </div>
           <div class="flex justify-between md:ml-4">
             <h4>Laboratory Assistant</h4>
