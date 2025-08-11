@@ -4,6 +4,7 @@
     <div class="px-6 py-2 flex-grow z-10">
       <slot />
     </div>
+    <!-- <Spotify /> -->
     <Footer />
     <NuxtImg
       v-if="!$device.isMobile"
