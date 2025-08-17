@@ -13,26 +13,22 @@
         sizes="sm:120px md:120px lg:120px"
         format="webp"
         preload
-        class="w-32 max-w-32 h-32 object-contain bg-white/80 rounded-4xl"
+        class="w-32 h-32 object-contain bg-white/80 rounded-4xl"
     /></NuxtLink>
     <div class="hidden md:flex w-full md:flex-col justify-center ml-2 lg:ml-4">
       <div class="flex justify-between text-base md:text-2xl lg:mb-1">
-        <h3>
-          <NuxtLink :to="link" target="_blank">{{ props.title }}</NuxtLink>
-        </h3>
-        <h3>{{ props.dates }}</h3>
+        <NuxtLink :to="link" target="_blank">{{ props.title }}</NuxtLink>
+        <p>{{ props.dates }}</p>
       </div>
       <div class="hidden md:flex justify-between">
-        <h4>
+        <p>
           ID: <NuxtLink :to="link" target="_blank">{{ props.id }}</NuxtLink>
-        </h4>
-        <h4>Issued by: {{ props.issued }}</h4>
+        </p>
+        <p>Issued by: {{ props.issued }}</p>
       </div>
     </div>
-    <div class="flex md:hidden">
-      <h3>
-        <NuxtLink :to="link" target="_blank">{{ props.title }}</NuxtLink>
-      </h3>
+    <div class="flex md:hidden mx-4 mt-2 text-center">
+      <NuxtLink :to="link" target="_blank">{{ props.title }}</NuxtLink>
     </div>
   </div>
 </template>
