@@ -1,6 +1,6 @@
 <template>
   <header class="relative w-full pl-6 pt-6 pb-8 z-50">
-    <div v-if="$device.isMobile" class="flex justify-between mb-4">
+    <div class="flex md:hidden justify-between mb-4">
       <NuxtLink to="/" class="text-5xl font-bold mr-6 relative -bottom-1"
         >JC</NuxtLink
       >
@@ -14,9 +14,8 @@
     </div>
     <nav class="w-full flex">
       <NuxtLink
-        v-if="!$device.isMobile"
         to="/"
-        class="text-3xl md:text-6xl font-bold mr-12 relative -bottom-1"
+        class="hidden md:inline-block text-3xl md:text-6xl font-bold mr-12 relative -bottom-1"
         >Jaden Chant</NuxtLink
       >
       <ul class="flex items-end text-2xl md:text-3xl lg:text-4xl">
@@ -44,9 +43,8 @@
       </ul>
       <div class="grow"></div>
       <NuxtLink
-        v-if="!$device.isMobile"
         to="/health"
-        class="flex justify-center md:w-32 w-24"
+        class="hidden md:flex justify-center md:w-32 w-24"
         aria-label="health"
       >
         <HealthIcon />

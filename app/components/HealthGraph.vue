@@ -16,14 +16,27 @@ const props = defineProps<{
   dataType: string;
 }>();
 import * as d3 from "d3";
-const { isMobile } = useDevice();
+const screenWidth = ref(0);
+const isMobile = ref(false);
+
+const updateWidth = () => {
+  screenWidth.value = window.innerWidth;
+  isMobile.value = screenWidth.value < 768;
+};
+
+onMounted(() => {
+  updateWidth();
+  window.addEventListener("resize", updateWidth);
+
+  drawGraph();
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateWidth);
+});
 
 const graphData = useState("graphData", () => props.data);
 const dataType = useState("dataType", () => props.dataType);
-
-onMounted(() => {
-  drawGraph();
-});
 
 onUpdated(() => {
   graphData.value = props.data;
@@ -38,7 +51,8 @@ const drawGraph = () => {
   });
 
   let margin, width, height, yaxis;
-  if (isMobile) {
+
+  if (isMobile.value) {
     margin = { top: 10, right: 10, bottom: 30, left: 55 };
     width = 325 - margin.left - margin.right;
     height = 300 - margin.top - margin.bottom;
@@ -64,7 +78,7 @@ const drawGraph = () => {
     .domain(d3.extent(graphData.value, (d: any) => d.date))
     .range([0, width]);
 
-  // const tickValues = isMobile
+  // const tickValues = isMobile.value
   //   ? graphData.value.filter((d, i) => i % 3 === 0).map((d) => d.date)
   //   : graphData.value.map((d) => d.date);
 
@@ -74,7 +88,7 @@ const drawGraph = () => {
     .append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x))
-    .style("font-size", isMobile ? "5px" : "12px");
+    .style("font-size", isMobile.value ? "5px" : "12px");
 
   const y = d3
     .scaleLinear()
@@ -84,11 +98,11 @@ const drawGraph = () => {
   const yAxis = svg
     .append("g")
     .call(d3.axisLeft(y))
-    .style("font-size", isMobile ? "10px" : "12px");
+    .style("font-size", isMobile.value ? "10px" : "12px");
 
   yAxis
     .append("text")
-    .style("font-size", isMobile ? "12px" : "14px")
+    .style("font-size", isMobile.value ? "12px" : "14px")
     .attr("transform", "rotate(-90)")
     .attr("y", yaxis.y)
     .attr("x", yaxis.x)

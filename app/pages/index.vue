@@ -1,10 +1,9 @@
 <template>
   <title>Jaden Chant</title>
   <NuxtImg
-    v-if="$device.isMobile"
     src="/images/jaden_nyc.png"
     alt="Jaden Chant"
-    class="absolute z-0 right-0 bottom-0"
+    class="md:hidden absolute z-0 right-0 bottom-0"
     sizes="sm:500px"
     preload
   />

@@ -6,6 +6,8 @@ Using [Nuxt4](https://nuxt.com/), [MongoDB/MongooseDB](https://mongoosejs.com/do
 
 With the Spotify Web API use `nuxi dev --host 127.0.0.1`
 
+Upgrade node `choco upgrade nodejs.install`
+
 Background Color: #374151
 
 ## Deployment

@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
 
-  modules: ["@nuxt/image", "@tresjs/nuxt", "@nuxtjs/device", "@nuxt/icon"],
+  modules: ["@nuxt/image", "@tresjs/nuxt", "@nuxt/icon"],
   css: ["@/assets/css/main.css"],
 
   vite: {
@@ -33,6 +33,8 @@ export default defineNuxtConfig({
   },
 
   icon: {
+    mode: "css",
+    cssLayer: "base",
     customCollections: [{ prefix: "my-icons", dir: "app/assets/icons" }],
   },
 
