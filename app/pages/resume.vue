@@ -9,7 +9,7 @@
 
         <div class="flex justify-between md:text-2xl">
           <h3>St. Olaf College, Northfield, Minnesota</h3>
-          <h3>August 2020 - May 2024</h3>
+          <h3>Aug 2020 - May 2024</h3>
         </div>
         <div class="md:ml-4">
           <div class="flex justify-between">
@@ -79,119 +79,130 @@
         <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">
           Certifications
         </h2>
-        <div class="grid grid-cols-2 md:flex md:flex-col">
-          <div
-            class="w-full flex flex-col justify-items-center justify-center md:flex-row md:mb-6"
-          >
-            <NuxtImg
-              src="images/epic.png"
-              alt="Epic Logo"
-              sizes="sm:120px md:120px lg:120px"
-              format="webp"
-              preload
-              class=""
-            />
-            <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
-              <div
-                class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
+        <div class="grid grid-cols-2 mb-4 gap-4 md:flex md:flex-col">
+          <Certification
+            title="Beaker Anatomic Pathology Proficiency"
+            dates="Aug 2025 - Aug 2029"
+            id="1467545167"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
+            title="Beaker Molecular Diagnostics Badge"
+            dates="Jul 2025 - Jul 2029"
+            id="1516091930"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
+            title="Beaker Clinical Pathology Certification"
+            dates="Jun 2025 - Jun 2029"
+            id="1488536556"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
+            title="AWS Certified Cloud Practitioner"
+            dates="Dec 2024 - Dec 2027"
+            id="67522d4f316243159813896aaeee86ff"
+            src="images/aws-certified-cloud-practitioner.png"
+            alt="AWS Certified Cloud Practitioner"
+            issued="Amazon Web Services"
+            link="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
+          />
+        </div>
+
+        <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">Experiences</h2>
+        <div class="mb-2 md:mb-4">
+          <div class="flex justify-between text-base md:text-2xl">
+            <h3>
+              <NuxtLink
+                to="https://www.allinahealth.org/abbott-northwestern-hospital"
+                target="_blank"
+                >Allina Health</NuxtLink
               >
-                <h3>Epic Beaker Clinical Pathology Analyst</h3>
-                <h3>June 2025 - June 2029</h3>
-              </div>
-              <div class="hidden md:flex justify-between">
-                <h4>ID: 1488536556</h4>
-                <h4>
-                  Issued by:
-                  <NuxtLink to="https://www.epic.com/" target="_blank"
-                    >Epic Systems</NuxtLink
-                  >
-                </h4>
-              </div>
-            </div>
+            </h3>
+            <h3>Sep 2024 - Aug 2025</h3>
           </div>
-          <div class="w-full mb-6 flex flex-col justify-center md:flex-row">
-            <NuxtLink
-              to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
-              target="_blank"
-              class="justify-items-center"
-            >
-              <NuxtImg
-                src="images/aws-certified-cloud-practitioner.png"
-                alt="AWS Certified Cloud Practitioner"
-                sizes="sm:120px md:120px lg:120px"
-                format="webp"
-                preload
-            /></NuxtLink>
-            <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
-              <div
-                class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
+          <div class="flex justify-between md:ml-4">
+            <h4>Laboratory Assistant</h4>
+            <h4>Minneapolis, MN</h4>
+          </div>
+          <DetailsToggle class="">
+            <ul class="list-disc ml-4">
+              <li>
+                Operate a laboratory information systems,
+                <NuxtLink to="https://www.epic.com/software/" target="_blank">
+                  Epic Software (Beaker)
+                </NuxtLink>
+                by handling data entry and tracking
+              </li>
+              <li>
+                Apply technical troubleshooting skills to laboratory equipment
+                workflows
+              </li>
+              <li>
+                Utilize analytical methods to process research specimens,
+                ensuring data integrity and precision in experimental outcomes
+              </li>
+            </ul>
+          </DetailsToggle>
+        </div>
+        <div class="mb-2 md:mb-4">
+          <div class="flex justify-between text-base md:text-2xl">
+            <h3>
+              <NuxtLink to="https://wp.stolaf.edu/disco/" target="_blank"
+                >St. Olaf College</NuxtLink
               >
-                <h3>
-                  <NuxtLink
-                    to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
-                    target="_blank"
-                    >AWS Certified Cloud Practitioner</NuxtLink
-                  >
-                </h3>
-                <h3>December 2024 - December 2027</h3>
-              </div>
-              <div class="hidden md:flex justify-between">
-                <h4>
-                  ID:
-                  <NuxtLink
-                    to="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
-                    target="_blank"
-                    >67522d4f316243159813896aaeee86ff</NuxtLink
-                  >
-                </h4>
-                <h4>
-                  Issued by:
-                  <NuxtLink to="https://aws.amazon.com/" target="_blank"
-                    >Amazon Web Services</NuxtLink
-                  >
-                </h4>
-              </div>
-            </div>
+            </h3>
+            <h3>Sep 2021 - May 2024</h3>
           </div>
-          <div class="w-full mb-6 flex flex-col justify-center md:flex-row">
-            <NuxtLink
-              to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
-              target="_blank"
-              class="justify-items-center"
-            >
-              <AHA class="w-[120px] h-[120px]" />
-            </NuxtLink>
-            <div class="w-full flex flex-col justify-center ml-2 lg:ml-4">
-              <div
-                class="hidden md:flex justify-between text-base md:text-2xl lg:mb-1"
-              >
-                <h3>
-                  <NuxtLink
-                    to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
-                    target="_blank"
-                    >Basic Life Support (BLS)</NuxtLink
-                  >
-                </h3>
-                <h3>Febuary 2025 - Febuary 2027</h3>
-              </div>
-              <div class="hidden md:flex justify-between">
-                <h4>
-                  ID:
-                  <NuxtLink
-                    to="https://ecards.heart.org/api/relay/v1/ecard/getfullpdf?eCardUId=0E83D721-647C-48C3-9F2E-AB8564ABBC99&langId=1"
-                    target="_blank"
-                    >255417683412</NuxtLink
-                  >
-                </h4>
-                <h4>
-                  Issued by:
-                  <NuxtLink to="https://www.heart.org/en" target="_blank"
-                    >American Heart Associaion</NuxtLink
-                  >
-                </h4>
-              </div>
-            </div>
+          <div class="flex justify-between md:ml-4">
+            <h4>Digital Scholarship Center Manager</h4>
+            <h4>Northfield, MN</h4>
           </div>
+          <DetailsToggle class="">
+            <ul class="list-disc ml-4">
+              <li>
+                Directed 3D print and design operations at the Digital
+                Scholarship Center, elevating the center’s creative output
+              </li>
+              <li>
+                Maintained and troubleshooted 3D printers to ensure consistent,
+                high-quality operation and minimal downtime
+              </li>
+              <li>
+                Educated and mentored students on 3D printing techniques and
+                design creation using
+                <NuxtLink to="https://www.tinkercad.com/" target="_blank"
+                  >TinkerCad</NuxtLink
+                >
+                development and innovation
+              </li>
+              <li>
+                Provided expert guidance on digital and creative projects,
+                utilizing
+                <NuxtLink
+                  to="https://www.adobe.com/products/catalog.html"
+                  target="_blank"
+                  >Adobe Creative Suite</NuxtLink
+                >
+                and
+                <NuxtLink
+                  to="https://www.esri.com/en-us/arcgis/products/arcgis-desktop/overview"
+                  target="_blank"
+                  >ArcGIS</NuxtLink
+                >
+                to support student project success
+              </li>
+            </ul>
+          </DetailsToggle>
         </div>
 
         <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">Internships</h2>
@@ -202,7 +213,7 @@
                 >Target</NuxtLink
               >
             </h3>
-            <h3>June - August 2023</h3>
+            <h3>Jun - Aug 2023</h3>
           </div>
           <div class="flex justify-between md:ml-4">
             <h4>Software Engineering Intern</h4>
@@ -245,7 +256,7 @@
                 >US Bank</NuxtLink
               >
             </h3>
-            <h3>June - August 2022</h3>
+            <h3>Jun - Aug 2022</h3>
           </div>
           <div class="flex justify-between md:ml-4">
             <h4>Software Development Intern</h4>
@@ -281,7 +292,7 @@
                 >FundraisingATM</NuxtLink
               >
             </h3>
-            <h3>May - November 2021</h3>
+            <h3>May - Nov 2021</h3>
           </div>
           <div class="flex justify-between md:ml-4">
             <h4>Frontend Developer</h4>
@@ -303,95 +314,6 @@
               <li>
                 Facilitated ongoing communication with intern developers and the
                 founder, ensuring alignment on project goals
-              </li>
-            </ul>
-          </DetailsToggle>
-        </div>
-
-        <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">
-          Other Experiences
-        </h2>
-        <div class="mb-2 md:mb-4">
-          <div class="flex justify-between text-base md:text-2xl">
-            <h3>
-              <NuxtLink
-                to="https://www.allinahealth.org/abbott-northwestern-hospital"
-                target="_blank"
-                >Allina Health</NuxtLink
-              >
-            </h3>
-            <h3>September 2024 - August 2025</h3>
-          </div>
-          <div class="flex justify-between md:ml-4">
-            <h4>Laboratory Assistant</h4>
-            <h4>Minneapolis, MN</h4>
-          </div>
-          <DetailsToggle class="">
-            <ul class="list-disc ml-4">
-              <li>
-                Operate a laboratory information systems,
-                <NuxtLink to="https://www.epic.com/software/" target="_blank">
-                  Epic Software (Beaker)
-                </NuxtLink>
-                by handling data entry and tracking
-              </li>
-              <li>
-                Apply technical troubleshooting skills to laboratory equipment
-                workflows
-              </li>
-              <li>
-                Utilize analytical methods to process research specimens,
-                ensuring data integrity and precision in experimental outcomes
-              </li>
-            </ul>
-          </DetailsToggle>
-        </div>
-        <div class="mb-2 md:mb-4">
-          <div class="flex justify-between text-base md:text-2xl">
-            <h3>
-              <NuxtLink to="https://wp.stolaf.edu/disco/" target="_blank"
-                >St. Olaf College</NuxtLink
-              >
-            </h3>
-            <h3>September 2021 - May 2024</h3>
-          </div>
-          <div class="flex justify-between md:ml-4">
-            <h4>Digital Scholarship Center Manager</h4>
-            <h4>Northfield, MN</h4>
-          </div>
-          <DetailsToggle class="">
-            <ul class="list-disc ml-4">
-              <li>
-                Directed 3D print and design operations at the Digital
-                Scholarship Center, elevating the center’s creative output
-              </li>
-              <li>
-                Maintained and troubleshooted 3D printers to ensure consistent,
-                high-quality operation and minimal downtime
-              </li>
-              <li>
-                Educated and mentored students on 3D printing techniques and
-                design creation using
-                <NuxtLink to="https://www.tinkercad.com/" target="_blank"
-                  >TinkerCad</NuxtLink
-                >
-                development and innovation
-              </li>
-              <li>
-                Provided expert guidance on digital and creative projects,
-                utilizing
-                <NuxtLink
-                  to="https://www.adobe.com/products/catalog.html"
-                  target="_blank"
-                  >Adobe Creative Suite</NuxtLink
-                >
-                and
-                <NuxtLink
-                  to="https://www.esri.com/en-us/arcgis/products/arcgis-desktop/overview"
-                  target="_blank"
-                  >ArcGIS</NuxtLink
-                >
-                to support student project success
               </li>
             </ul>
           </DetailsToggle>
@@ -470,8 +392,6 @@
 </template>
 
 <script setup lang="ts">
-import AHA from "~/assets/icons/AHA.vue";
-
 definePageMeta({
   title: "Resume",
 });
