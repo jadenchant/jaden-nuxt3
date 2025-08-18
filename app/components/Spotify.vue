@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="!error && data"
-    class="flex absolute bottom-4 right-4 h-32 p-4 bg-black/85 text-slate-300 z-10"
+    class="flex fixed bottom-4 right-4 h-32 p-4 bg-black/85 text-slate-300 z-50"
   >
     <NuxtImg
       v-if="data.item.album.images[1]?.url"
@@ -12,20 +12,57 @@
       format="webp"
     />
     <div class="ml-3">
-      <h3>Current Listening:</h3>
-      <p>{{ data.item.name }}</p>
-      <!-- <p>{{ data.item.external_urls.spotify }}</p> -->
-      <p>{{ data.item.artists[0]?.name }}</p>
-      <!-- <p>{{ data.item.artists[0]?.external_urls.spotify }}</p> -->
+      <h3 class="text-slate-300/70">Current Listening:</h3>
+      <div>
+        <NuxtLink
+          :to="data.item.external_urls.spotify"
+          target="_blank"
+          class="text-2xl hover:underline"
+          >{{ data.item.name }}</NuxtLink
+        >
+      </div>
+      <div>
+        <NuxtLink
+          :to="data.item.artists[0]?.external_urls.spotify"
+          target="_blank"
+          class="text-slate-300/85 hover:underline"
+          >{{ data.item.artists[0]?.name }}</NuxtLink
+        >
+      </div>
     </div>
   </div>
   <p v-if="error">{{ error }}</p>
 </template>
 
 <script setup lang="ts">
-const { data, error } = await useFetch<SpotifyCurrentlyPlaying>(
+const { data, error, refresh } = await useFetch<SpotifyCurrentlyPlaying>(
   "/api/spotify/playing",
 );
 
-const time = data.value?.progress_ms;
+const count = ref(0);
+
+const total = ref(0);
+
+let interval: NodeJS.Timer;
+
+watch(data, (newData) => {
+  if (newData) {
+    count.value = newData.progress_ms / 1000;
+    total.value = newData.item.duration_ms / 1000;
+  }
+});
+
+onMounted(() => {
+  interval = setInterval(() => {
+    if (total.value - count.value <= 0) {
+      refresh();
+    } else {
+      count.value++;
+    }
+  }, 1000);
+});
+
+onUnmounted(() => {
+  clearInterval(interval);
+});
 </script>

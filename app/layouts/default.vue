@@ -4,8 +4,8 @@
     <div class="px-6 py-2 flex-grow z-10">
       <slot />
     </div>
-    <!-- <Spotify /> -->
     <Footer />
+    <Spotify v-if="route.path == '/health'" />
     <NuxtImg
       src="/images/jaden_nyc.png"
       alt="Jaden Chant"
@@ -26,4 +26,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const route = useRoute();
+</script>
