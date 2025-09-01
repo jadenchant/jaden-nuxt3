@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     } else {
       const scope = [
         "user-read-currently-playing",
-        "user-read-playback-state",
+        "user-read-recently-played",
       ].join(" ");
 
       const redirect = `https://accounts.spotify.com/authorize?response_type=code&client_id=${process.env.SPOTIFY_CLIENT_ID}&scope=${encodeURIComponent(

@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     const token = await getToken();
 
     if (token) {
-      const response = await $fetch(
+      const response_current = await $fetch(
         "https://api.spotify.com/v1/me/player/currently-playing",
         {
           headers: {
@@ -13,7 +13,24 @@ export default defineEventHandler(async (event) => {
           },
         },
       );
-      return response;
+
+      if (!response_current) {
+        const response_recent = await $fetch(
+          "https://api.spotify.com/v1/me/player/recently-played",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+            query: {
+              limit: 1,
+            },
+          },
+        );
+
+        return response_recent;
+      } else {
+        return response_current;
+      }
     } else {
       throw new Error("Did NOT Receive Active Token");
     }
