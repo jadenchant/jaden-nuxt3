@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.11.0",
-    "@tailwindcss/vite": "^4.1.12",
+    "@tailwindcss/vite": "^4.1.13",
     "@tresjs/cientos": "^4.3.1",
     "@tresjs/core": "^4.3.6",
     "@tresjs/nuxt": "^4.0.0",
