@@ -119,6 +119,20 @@
         </div>
 
         <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">Experiences</h2>
+        <div class="mb-6 md:mb-8">
+          <div class="flex justify-between text-base md:text-2xl">
+            <h3>
+              <NuxtLink to="https://www.aspirus.org/" target="_blank"
+                >Aspirus Health</NuxtLink
+              >
+            </h3>
+            <h3>Aug 2025 - Current</h3>
+          </div>
+          <div class="flex justify-between md:ml-4">
+            <h4>Epic Application Analyst</h4>
+            <h4>Remote</h4>
+          </div>
+        </div>
         <div class="mb-2 md:mb-4">
           <div class="flex justify-between text-base md:text-2xl">
             <h3>

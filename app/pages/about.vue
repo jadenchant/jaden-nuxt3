@@ -2,24 +2,21 @@
   <title>About</title>
   <div class="z-10 md:mt-6 lg:mt-8">
     <div
-      class="flex flex-col lg:align-middle justify-between h-36 md:h-36 ml-2 md:ml-4 md:text-2xl lg:text-center"
+      class="flex flex-col lg:align-middle justify-between h-36 md:h-36 ml-2 md:ml-4 md:text-2xl lg:text-center z-10"
     >
-      <p class="z-10">
+      <p>
+        Application Analyst @
+        <NuxtLink to="https://aspirus.org/" target="_blank" class="underline"
+          >Aspirus Health</NuxtLink
+        >
+      </p>
+      <p>
         CS and Math Graduate from
         <NuxtLink to="https://wp.stolaf.edu/" target="_blank" class="underline"
           >St. Olaf College</NuxtLink
         >
       </p>
-      <p class="z-10">
-        Laboratory Assistant @
-        <NuxtLink
-          to="https://www.allinahealth.org/"
-          target="_blank"
-          class="underline"
-          >Allina Health</NuxtLink
-        >
-      </p>
-      <p class="z-10">
+      <p>
         Software Engineering Intern @
         <NuxtLink
           to="https://www.target.com/finds"
@@ -28,7 +25,7 @@
           >Target</NuxtLink
         >
       </p>
-      <p class="z-10">
+      <p>
         Software Development Intern @
         <NuxtLink
           to="https://www.usbank.com/wealth-management.html"

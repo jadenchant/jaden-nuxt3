@@ -12,6 +12,7 @@
     <div
       class="flex flex-col text-lg ml-2 md:ml-4 lg:ml-8 lg:h-56 lg:justify-between lg:text-2xl"
     >
+      <p class="mb-4">I am an Application Analyst at Aspirus Health.</p>
       <p class="mb-4">
         I am a CS and Math graduate from St. Olaf College in Northfield, MN.
       </p>
@@ -25,7 +26,7 @@
         >!
       </p>
       <p>
-        If you're curious about yesterday's
+        Or if you're curious about yesterday's
         <NuxtLink to="/health" class="underline">health data...</NuxtLink>
       </p>
     </div>
