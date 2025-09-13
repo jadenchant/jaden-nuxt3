@@ -3,9 +3,10 @@ import { getToken } from "../../utils/spotify/getToken";
 export default defineEventHandler(async (event) => {
   try {
     const token = await getToken();
+    let response;
 
     if (token) {
-      const response_current = await $fetch(
+      const response_current: any = await $fetch(
         "https://api.spotify.com/v1/me/player/currently-playing",
         {
           headers: {
@@ -15,7 +16,7 @@ export default defineEventHandler(async (event) => {
       );
 
       if (!response_current) {
-        const response_recent = await $fetch(
+        const response_recent: any = await $fetch(
           "https://api.spotify.com/v1/me/player/recently-played",
           {
             headers: {
@@ -27,9 +28,19 @@ export default defineEventHandler(async (event) => {
           },
         );
 
-        return response_recent;
+        response = response_recent.items[0]?.track;
+
+        response.type = "recent";
+
+        return response;
       } else {
-        return response_current;
+        response = response_current.item;
+
+        response.progress_ms = response_current.progress_ms;
+
+        response.type = "current";
+
+        return response;
       }
     } else {
       throw new Error("Did NOT Receive Active Token");

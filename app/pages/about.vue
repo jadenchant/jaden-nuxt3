@@ -5,7 +5,7 @@
       class="flex flex-col lg:align-middle justify-between h-36 md:h-36 ml-2 md:ml-4 md:text-2xl lg:text-center z-10"
     >
       <p>
-        Application Analyst @
+        Epic Application Analyst @
         <NuxtLink to="https://aspirus.org/" target="_blank" class="underline"
           >Aspirus Health</NuxtLink
         >

@@ -130,7 +130,7 @@
           </div>
           <div class="flex justify-between md:ml-4">
             <h4>Epic Application Analyst</h4>
-            <h4>Remote</h4>
+            <h4>Remote, MN</h4>
           </div>
         </div>
         <div class="mb-2 md:mb-4">
