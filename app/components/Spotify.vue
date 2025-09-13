@@ -60,7 +60,6 @@ onMounted(() => {
       refresh();
     } else {
       count.value++;
-      console.log(count.value);
     }
   }, 1000);
 });
