@@ -23,7 +23,6 @@
       :intensity="0.5"
       cast-shadow
     />
-    <!-- <TresGridHelper /> -->
     <TresMesh>
       <Suspense>
         <LazyGLTFModel

@@ -1,6 +1,6 @@
 <template>
   <div class="h-96 w-[350px] z-10">
-    <TresCanvas v-bind="gl" class="!touch-auto">
+    <!-- <TresCanvas v-bind="gl" class="!touch-auto">
       <TresPerspectiveCamera
         :position="new Vector3(0, 2.3, 6.2)"
         :fov="75"
@@ -23,12 +23,11 @@
           />
         </Suspense>
       </TresMesh>
-    </TresCanvas>
+    </TresCanvas> -->
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRenderLoop } from "@tresjs/core";
 import {
   BasicShadowMap,
   NoToneMapping,
@@ -36,7 +35,7 @@ import {
   Vector3,
   Color,
 } from "three";
-const { onLoop } = useRenderLoop();
+
 const gl = {
   shadows: true,
   alpha: true,
@@ -45,20 +44,21 @@ const gl = {
   toneMapping: NoToneMapping,
 };
 
-const modelRef = shallowRef<any>(null);
+// const modelRef = shallowRef<any>(null);
+// const { onBeforeRender } = useLoop();
 
-const onModelError = (error: Error) => {
-  console.error("Error loading model:", error);
-};
+// const onModelError = (error: Error) => {
+//   console.error("Error loading model:", error);
+// };
 
-onLoop(({ delta, elapsed }) => {
-  if (modelRef.value && modelRef.value.instance) {
-    let baseline = delta * 0.7;
-    if (elapsed < 2.5) {
-      baseline *= 2.5 / elapsed;
-    }
+// onBeforeRender(({ delta, elapsed }) => {
+//   if (modelRef.value && modelRef.value.instance) {
+//     let baseline = delta * 0.7;
+//     if (elapsed < 2.5) {
+//       baseline *= 2.5 / elapsed;
+//     }
 
-    modelRef.value.instance.rotation.y -= baseline;
-  }
-});
+//     modelRef.value.instance.rotation.y -= baseline;
+//   }
+// });
 </script>
