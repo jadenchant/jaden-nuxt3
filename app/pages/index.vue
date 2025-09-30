@@ -12,9 +12,17 @@
     <div
       class="flex flex-col text-lg ml-2 md:ml-4 lg:ml-8 lg:h-56 lg:justify-between lg:text-2xl"
     >
-      <p class="mb-4">I am an Application Analyst at Aspirus Health.</p>
       <p class="mb-4">
-        I am a CS and Math graduate from St. Olaf College in Northfield, MN.
+        I am an Application Analyst at
+        <NuxtLink to="https://www.aspirus.org/" target="_blank"
+          >Aspirus Health</NuxtLink
+        >.
+      </p>
+      <p class="mb-4">
+        I am a CS and Math graduate from
+        <NuxtLink to="https://wp.stolaf.edu/" target="_blank"
+          >St. Olaf College</NuxtLink
+        >.
       </p>
       <p class="mb-4">
         If you would like to contact me, feel free to send me an email at

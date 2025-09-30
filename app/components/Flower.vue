@@ -4,7 +4,7 @@
     target="_blank"
     class="h-96 lg:h-[400px] w-full lg:w-[500px] xl:w-[600px] z-10"
   >
-    <TresCanvas v-bind="gl" class="!touch-auto">
+    <!-- <TresCanvas v-bind="gl" class="!touch-auto">
       <TresPerspectiveCamera
         :position="new Vector3(0, 0, props.zPos)"
         :fov="75"
@@ -27,7 +27,7 @@
           />
         </Suspense>
       </TresMesh>
-    </TresCanvas>
+    </TresCanvas> -->
   </NuxtLink>
 </template>
 
@@ -49,35 +49,35 @@ const gl = {
   toneMapping: NoToneMapping,
 };
 
-const modelRef = shallowRef<any>();
+// const modelRef = shallowRef<any>();
 
-const onModelError = (error: any) => {
-  console.error("Error loading model:", error);
-};
+// const onModelError = (error: any) => {
+//   console.error("Error loading model:", error);
+// };
 
-watch(modelRef, (newValue, oldValue) => {
-  if (
-    modelRef.value &&
-    modelRef.value.instance &&
-    modelRef.value.instance.rotation &&
-    newValue !== oldValue
-  ) {
-    modelRef.value.instance.rotation.x = Math.PI / 2;
-    modelRef.value.instance.rotation.y = props.tiltRight
-      ? Math.PI / 8
-      : -Math.PI / 8;
-  }
-});
+// watch(modelRef, (newValue, oldValue) => {
+//   if (
+//     modelRef.value &&
+//     modelRef.value.instance &&
+//     modelRef.value.instance.rotation &&
+//     newValue !== oldValue
+//   ) {
+//     modelRef.value.instance.rotation.x = Math.PI / 2;
+//     modelRef.value.instance.rotation.y = props.tiltRight
+//       ? Math.PI / 8
+//       : -Math.PI / 8;
+//   }
+// });
 
-onBeforeRender(({ delta, elapsed }) => {
-  if (modelRef.value && modelRef.value.instance) {
-    let baseline = delta * 0.9;
-    if (elapsed < 2.5) {
-      baseline *= 2.5 / elapsed;
-    }
-    modelRef.value.instance.rotation.z += props.turnRight
-      ? -baseline
-      : baseline;
-  }
-});
+// onBeforeRender(({ delta, elapsed }) => {
+//   if (modelRef.value && modelRef.value.instance) {
+//     let baseline = delta * 0.9;
+//     if (elapsed < 2.5) {
+//       baseline *= 2.5 / elapsed;
+//     }
+//     modelRef.value.instance.rotation.z += props.turnRight
+//       ? -baseline
+//       : baseline;
+//   }
+// });
 </script>

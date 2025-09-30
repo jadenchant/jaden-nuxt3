@@ -81,6 +81,15 @@
         </h2>
         <div class="grid grid-cols-2 mb-4 gap-4 md:flex md:flex-col">
           <Certification
+            title="Core Analyst Badge"
+            dates="Sep 2025 - Sep 2029"
+            id="1519424660"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
             title="Beaker Anatomic Pathology Proficiency"
             dates="Aug 2025 - Aug 2029"
             id="1467545167"
@@ -299,13 +308,7 @@
         </div>
         <div class="mb-2 md:mb-4">
           <div class="flex justify-between text-base md:text-2xl">
-            <h3>
-              <NuxtLink
-                to="https://www.fundraisingatm.com/index.php"
-                target="_blank"
-                >FundraisingATM</NuxtLink
-              >
-            </h3>
+            <h3>FundraisingATM</h3>
             <h3>May - Nov 2021</h3>
           </div>
           <div class="flex justify-between md:ml-4">
@@ -390,6 +393,14 @@
           </h4>
           <h4>
             Tools and Topics:
+            <NuxtLink to="https://www.mychart.org/" target="_blank"
+              >Epic MyChart</NuxtLink
+            >,
+            <NuxtLink
+              to="https://www.epic.com/software/health-systems-and-clinics/"
+              target="_blank"
+              >Epic Ambulatory</NuxtLink
+            >,
             <NuxtLink
               to="https://www.epic.com/software/specialties/"
               target="_blank"

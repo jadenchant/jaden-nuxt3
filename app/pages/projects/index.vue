@@ -33,6 +33,39 @@
       link="https://jadenchant.github.io/pages/projects/nfl_fantasy_pt/"
     />
     <ProjectCard
+      title="MLB Statistics"
+      desc="Shiny app for MLB Most Valuable Player, Rookie of the Year, and Cy Young award statistics."
+      img="images/mlb-stats.png"
+      alt="MLB Statistics Shiny App Dashboard"
+      link="https://jadenchant.github.io/pages/projects/mlb/"
+    />
+    <ProjectCard
+      title="Project 2025 Text Analysis"
+      desc="Collecting text data from the Project 2025 PDF using Python and doing analysis with R packages."
+      img="images/project2025.png"
+      alt="Sentiment analysis from Project 2025"
+      link="https://jadenchant.github.io/pages/projects/project_2025/"
+    />
+    <ProjectCard
+      title="Tableu Data Visualizations"
+      desc="Tableu Data Visualizations for Data Viz Class"
+      img="images/dataviz.png"
+      alt="2020 Fatal Collisions by states"
+      link="https://public.tableau.com/app/profile/jadenchant/vizzes"
+    />
+    <ProjectCard
+      title="Data Science Mini Projects"
+      desc="DS projects like maps and text analysis using R and many R packages including tidyverse and ggplot."
+      img="images/miniproject-usmap.png"
+      alt="Data Science Mini Project US Map"
+      link="https://jadenchant.github.io/pages/maps/us_states.html"
+    />
+    <ProjectCard
+      title="FactCheck.org's SciCheck Article Text Analysis"
+      desc="Collecting text data from FactCheck.org using rvest."
+      link="https://jadenchant.github.io/pages/projects/scicheck/"
+    />
+    <ProjectCard
       title="Elevator.zone"
       desc="Elevator experience created using Three.js and Svelte"
       img="images/elevator.png"
@@ -46,39 +79,6 @@
       alt="Toggle"
       link="/projects/toggle"
       internal
-    />
-    <ProjectCard
-      title="MLB Statistics"
-      desc="Shiny app for MLB Most Valuable Player, Rookie of the Year, and Cy Young award statistics."
-      img="images/mlb-stats.png"
-      alt="MLB Statistics Shiny App Dashboard"
-      link="https://jadenchant.github.io/pages/projects/mlb/"
-    />
-    <ProjectCard
-      title="Tableu Data Visualizations"
-      desc="Tableu Data Visualizations for Data Viz Class"
-      img="images/dataviz.png"
-      alt="2020 Fatal Collisions by states"
-      link="https://public.tableau.com/app/profile/jadenchant/vizzes"
-    />
-    <ProjectCard
-      title="Project 2025 Text Analysis"
-      desc="Collecting text data from the Project 2025 PDF using Python and doing analysis with R packages."
-      img="images/project2025.png"
-      alt="Sentiment analysis from Project 2025"
-      link="https://jadenchant.github.io/pages/projects/project_2025/"
-    />
-    <ProjectCard
-      title="Data Science Mini Projects"
-      desc="DS projects like maps and text analysis using R and many R packages including tidyverse and ggplot."
-      img="images/miniproject-usmap.png"
-      alt="Data Science Mini Project US Map"
-      link="https://jadenchant.github.io/pages/maps/us_states.html"
-    />
-    <ProjectCard
-      title="FactCheck.org's SciCheck Article Text Analysis"
-      desc="Collecting text data from FactCheck.org using rvest."
-      link="https://jadenchant.github.io/pages/projects/scicheck/"
     />
     <ProjectCard
       title="3D Flower Models"
