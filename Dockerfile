@@ -1,9 +1,10 @@
-ARG NODE_VERSION=node:24.6.0
+ARG NODE_VERSION=node:24.9.0
 FROM $NODE_VERSION AS build
 
 WORKDIR /app
 
 COPY package.json package-lock.json ./
+RUN npm install -g npm@latest
 RUN npm ci
 
 COPY . .

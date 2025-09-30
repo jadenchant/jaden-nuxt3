@@ -1,5 +1,5 @@
 <template>
-  <title>Faces</title>
+  <title>Face</title>
 
   <TresCanvas
     v-bind="gl"
