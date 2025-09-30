@@ -28,13 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import {
-  BasicShadowMap,
-  NoToneMapping,
-  SRGBColorSpace,
-  Vector3,
-  Color,
-} from "three";
+import { BasicShadowMap, NoToneMapping, SRGBColorSpace, Vector3 } from "three";
 
 const gl = {
   shadows: true,

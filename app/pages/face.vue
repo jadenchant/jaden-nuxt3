@@ -1,7 +1,7 @@
 <template>
   <title>Face</title>
 
-  <TresCanvas
+  <!-- <TresCanvas
     v-bind="gl"
     class="!touch-auto overflow-y-hidden overflow-x-hidden"
     window-size
@@ -33,7 +33,7 @@
         />
       </Suspense>
     </TresMesh>
-  </TresCanvas>
+  </TresCanvas> -->
 </template>
 <script setup lang="ts">
 definePageMeta({
@@ -55,13 +55,13 @@ const gl = {
 };
 import { OrbitControls } from "@tresjs/cientos";
 
-const modelRef = shallowRef<any>(null);
+// const modelRef = shallowRef<any>(null);
 
-const onModelError = (error: Error) => {
-  console.error("Error loading model:", error);
-};
+// const onModelError = (error: Error) => {
+//   console.error("Error loading model:", error);
+// };
 
-watch(modelRef, () => {
-  modelRef.value.instance.position.y = -2;
-});
+// watch(modelRef, () => {
+//   modelRef.value.instance.position.y = -2;
+// });
 </script>
