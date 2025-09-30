@@ -11,7 +11,7 @@
         :near="0.1"
         :far="1000"
       />
-      <TresAmbientLight :color="new Color(0xffffff)" :intensity="0.75" />
+      <TresAmbientLight :intensity="0.75" />
       <TresDirectionalLight
         :position="new Vector3(0, 8, 20)"
         :intensity="1.4"
@@ -32,14 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { useRenderLoop } from "@tresjs/core";
-import {
-  BasicShadowMap,
-  NoToneMapping,
-  SRGBColorSpace,
-  Vector3,
-  Color,
-} from "three";
+import { BasicShadowMap, NoToneMapping, SRGBColorSpace, Vector3 } from "three";
 const props = defineProps<{
   modelPath: string;
   zPos: number;
@@ -47,7 +40,7 @@ const props = defineProps<{
   turnRight?: boolean;
   tiltRight?: boolean;
 }>();
-const { onLoop } = useRenderLoop();
+const { onBeforeRender } = useLoop();
 const gl = {
   shadows: true,
   alpha: true,
@@ -76,7 +69,7 @@ watch(modelRef, (newValue, oldValue) => {
   }
 });
 
-onLoop(({ delta, elapsed }) => {
+onBeforeRender(({ delta, elapsed }) => {
   if (modelRef.value && modelRef.value.instance) {
     let baseline = delta * 0.9;
     if (elapsed < 2.5) {
