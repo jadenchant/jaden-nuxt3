@@ -17,3 +17,5 @@ GitHub trigger Google Cloud Build
 Deployed to Google Cloud Run
 
 Remember .env variables
+
+`npm cache clean --force`
