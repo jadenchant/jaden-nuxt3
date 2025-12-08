@@ -15,10 +15,11 @@
     "autoprefixer": "^10.4.22",
     "nuxt": "^4.2.1",
     "postcss": "^8.5.6",
-    "prettier": "^3.7.3",
+    "prettier": "^3.7.4",
     "tailwindcss": "^4.1.17"
   },
   "dependencies": {
+    "@Iconify-json/material-symbols": "npm:@iconify-json/material-symbols@^1.2.49",
     "@nuxt/image": "^2.0.0",
     "@tailwindcss/vite": "^4.1.17",
     "@tresjs/cientos": "^5.1.1",
@@ -26,7 +27,7 @@
     "@tresjs/nuxt": "^5.1.1",
     "d3": "^7.9.0",
     "dotenv": "^17.2.3",
-    "mongoose": "^9.0.0",
+    "mongoose": "^9.0.1",
     "three": "^0.181.2"
   }
 }
