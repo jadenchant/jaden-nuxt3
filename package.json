@@ -21,7 +21,7 @@
   "dependencies": {
     "@Iconify-json/material-symbols": "npm:@iconify-json/material-symbols@^1.2.49",
     "@nuxt/image": "^2.0.0",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.18",
     "@tresjs/cientos": "^5.1.1",
     "@tresjs/core": "^5.1.1",
     "@tresjs/nuxt": "^5.1.1",
