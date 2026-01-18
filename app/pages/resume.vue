@@ -81,6 +81,24 @@
         </h2>
         <div class="grid grid-cols-2 mb-4 gap-4 md:flex md:flex-col">
           <Certification
+            title="Clinical Workspace Configuration Badge"
+            dates="Jan 2026 - Jan 2029"
+            id="1581027278"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
+            title="Patient-Entered Data Badge"
+            dates="Dec 2025 - Dec 2028"
+            id="1571939657"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
             title="Decision Trees Badge"
             dates="Nov 2025 - Nov 2028"
             id="1558371118"
