@@ -8,7 +8,7 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.2.54",
+    "@iconify-json/material-symbols": "^1.2.55",
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/icon": "^2.2.1",
     "@types/d3": "^7.4.3",
@@ -26,8 +26,8 @@
     "@tresjs/core": "^5.4.0",
     "@tresjs/nuxt": "^5.2.0",
     "d3": "^7.9.0",
-    "dotenv": "^17.2.4",
-    "mongoose": "^9.1.6",
+    "dotenv": "^17.3.1",
+    "mongoose": "^9.2.1",
     "three": "^0.182.0"
   }
 }
