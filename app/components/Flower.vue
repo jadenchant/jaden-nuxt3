@@ -52,9 +52,9 @@ const wrapperRef = shallowRef(null);
 
 const onLoop = ({ delta, elapsed }: { delta: number; elapsed: number }) => {
   if (wrapperRef.value?.rotation) {
-    let baseline = delta * 10;
-    if (elapsed < 5) {
-      baseline *= 5 / elapsed;
+    let baseline = delta * 0.9;
+    if (elapsed < 4) {
+      baseline *= 4 / elapsed;
     }
     wrapperRef.value.rotation.z += props.turnRight ? -baseline : baseline;
   }

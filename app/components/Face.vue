@@ -41,9 +41,9 @@ const wrapperRef = shallowRef(null);
 
 const onLoop = ({ delta, elapsed }: { delta: number; elapsed: number }) => {
   if (wrapperRef.value?.rotation) {
-    let baseline = delta * 10;
-    if (elapsed < 2.5) {
-      baseline *= 2 / elapsed;
+    let baseline = delta * 0.7;
+    if (elapsed < 3) {
+      baseline *= 3 / elapsed;
     }
     wrapperRef.value.rotation.y += baseline;
   }
