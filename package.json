@@ -23,7 +23,7 @@
     "@nuxt/image": "^2.0.0",
     "@tailwindcss/vite": "^4.1.18",
     "@tresjs/cientos": "^5.3.1",
-    "@tresjs/core": "^5.4.1",
+    "@tresjs/core": "^5.5.0",
     "@tresjs/nuxt": "^5.2.1",
     "d3": "^7.9.0",
     "dotenv": "^17.3.1",
