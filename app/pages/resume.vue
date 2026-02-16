@@ -81,63 +81,9 @@
         </h2>
         <div class="grid grid-cols-2 mb-4 gap-4 md:flex md:flex-col">
           <Certification
-            title="Clinical Workspace Configuration Badge"
-            dates="Jan 2026 - Jan 2029"
-            id="1581027278"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
-            title="Patient-Entered Data Badge"
-            dates="Dec 2025 - Dec 2028"
-            id="1571939657"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
-            title="Decision Trees Badge"
-            dates="Nov 2025 - Nov 2028"
-            id="1558371118"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
             title="MyChart Certification"
             dates="Nov 2025 - Nov 2028"
             id="1543087190"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
-            title="Hello World Badge"
-            dates="Oct 2025 - Oct 2028"
-            id="1556899625"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
-            title="MyChart Care Companion Administration Badge"
-            dates="Oct 2025 - Oct 2028"
-            id="1557829828"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
-            title="MyChart Bedside Badge"
-            dates="Oct 2025 - Oct 2028"
-            id="1558370474"
             src="images/epic.png"
             alt="Epic Logo"
             issued="Epic Systems"
@@ -153,27 +99,9 @@
             link="https://www.epic.com/"
           />
           <Certification
-            title="Core Analyst Badge"
-            dates="Sep 2025 - Sep 2028"
-            id="1519424660"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
             title="Beaker Anatomic Pathology Proficiency"
             dates="Aug 2025 - Aug 2028"
             id="1467545167"
-            src="images/epic.png"
-            alt="Epic Logo"
-            issued="Epic Systems"
-            link="https://www.epic.com/"
-          />
-          <Certification
-            title="Beaker Molecular Diagnostics Badge"
-            dates="Jul 2025 - Jul 2028"
-            id="1516091930"
             src="images/epic.png"
             alt="Epic Logo"
             issued="Epic Systems"
@@ -197,6 +125,80 @@
             issued="Amazon Web Services"
             link="https://cp.certmetrics.com/amazon/en/public/verify/credential/67522d4f316243159813896aaeee86ff"
           />
+          <DetailsToggle button-text="Certifications">
+            <Certification
+              title="Clinical Workspace Configuration Badge"
+              dates="Jan 2026 - Jan 2029"
+              id="1581027278"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="Patient-Entered Data Badge"
+              dates="Dec 2025 - Dec 2028"
+              id="1571939657"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="Decision Trees Badge"
+              dates="Nov 2025 - Nov 2028"
+              id="1558371118"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="Hello World Badge"
+              dates="Oct 2025 - Oct 2028"
+              id="1556899625"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="MyChart Care Companion Administration Badge"
+              dates="Oct 2025 - Oct 2028"
+              id="1557829828"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="MyChart Bedside Badge"
+              dates="Oct 2025 - Oct 2028"
+              id="1558370474"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="Core Analyst Badge"
+              dates="Sep 2025 - Sep 2028"
+              id="1519424660"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+            <Certification
+              title="Beaker Molecular Diagnostics Badge"
+              dates="Jul 2025 - Jul 2028"
+              id="1516091930"
+              src="images/epic.png"
+              alt="Epic Logo"
+              issued="Epic Systems"
+              link="https://www.epic.com/"
+            />
+          </DetailsToggle>
         </div>
 
         <h2 class="text-xl md:text-3xl underline mb-2 md:mb-4">Experiences</h2>

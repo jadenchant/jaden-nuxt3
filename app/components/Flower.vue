@@ -4,7 +4,13 @@
     target="_blank"
     class="h-96 lg:h-[400px] w-full lg:w-[500px] xl:w-[600px] z-10"
   >
-    <!-- <TresCanvas v-bind="gl" class="!touch-auto">
+    <TresCanvas
+      v-bind="gl"
+      class="!touch-auto"
+      :clear-color="0x000000"
+      :clear-alpha="0"
+      @loop="onLoop"
+    >
       <TresPerspectiveCamera
         :position="new Vector3(0, 0, props.zPos)"
         :fov="75"
@@ -17,17 +23,10 @@
         :intensity="1.4"
         cast-shadow
       />
-      <TresMesh>
-        <Suspense>
-          <LazyGLTFModel
-            ref="modelRef"
-            :path="props.modelPath"
-            draco
-            @error="onModelError"
-          />
-        </Suspense>
-      </TresMesh>
-    </TresCanvas> -->
+      <TresGroup ref="wrapperRef" :rotation="[Math.PI * 0.5, 0, 0]">
+        <GLTFModel :path="props.modelPath" draco
+      /></TresGroup>
+    </TresCanvas>
   </NuxtLink>
 </template>
 
@@ -40,7 +39,7 @@ const props = defineProps<{
   turnRight?: boolean;
   tiltRight?: boolean;
 }>();
-const { onBeforeRender } = useLoop();
+
 const gl = {
   shadows: true,
   alpha: true,
@@ -49,35 +48,15 @@ const gl = {
   toneMapping: NoToneMapping,
 };
 
-// const modelRef = shallowRef<any>();
+const wrapperRef = shallowRef(null);
 
-// const onModelError = (error: any) => {
-//   console.error("Error loading model:", error);
-// };
-
-// watch(modelRef, (newValue, oldValue) => {
-//   if (
-//     modelRef.value &&
-//     modelRef.value.instance &&
-//     modelRef.value.instance.rotation &&
-//     newValue !== oldValue
-//   ) {
-//     modelRef.value.instance.rotation.x = Math.PI / 2;
-//     modelRef.value.instance.rotation.y = props.tiltRight
-//       ? Math.PI / 8
-//       : -Math.PI / 8;
-//   }
-// });
-
-// onBeforeRender(({ delta, elapsed }) => {
-//   if (modelRef.value && modelRef.value.instance) {
-//     let baseline = delta * 0.9;
-//     if (elapsed < 2.5) {
-//       baseline *= 2.5 / elapsed;
-//     }
-//     modelRef.value.instance.rotation.z += props.turnRight
-//       ? -baseline
-//       : baseline;
-//   }
-// });
+const onLoop = ({ delta, elapsed }: { delta: number; elapsed: number }) => {
+  if (wrapperRef.value?.rotation) {
+    let baseline = delta * 10;
+    if (elapsed < 5) {
+      baseline *= 5 / elapsed;
+    }
+    wrapperRef.value.rotation.z += props.turnRight ? -baseline : baseline;
+  }
+};
 </script>

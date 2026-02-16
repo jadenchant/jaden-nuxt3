@@ -1,10 +1,11 @@
 <template>
   <title>Face</title>
-
-  <!-- <TresCanvas
+  <TresCanvas
     v-bind="gl"
     class="!touch-auto overflow-y-hidden overflow-x-hidden"
     window-size
+    :clear-color="0x000000"
+    :clear-alpha="0"
   >
     <TresPerspectiveCamera
       :position="new Vector3(0, 1, 7)"
@@ -23,17 +24,10 @@
       :intensity="0.5"
       cast-shadow
     />
-    <TresMesh>
-      <Suspense>
-        <LazyGLTFModel
-          ref="modelRef"
-          path="/models/face.glb"
-          draco
-          @error="onModelError"
-        />
-      </Suspense>
-    </TresMesh>
-  </TresCanvas> -->
+    <TresGroup>
+      <GLTFModel path="/models/face.glb" draco :position="[0, -2, 0]" />
+    </TresGroup>
+  </TresCanvas>
 </template>
 <script setup lang="ts">
 definePageMeta({
@@ -46,6 +40,7 @@ useSeoMeta({
 });
 
 import { BasicShadowMap, NoToneMapping, SRGBColorSpace, Vector3 } from "three";
+import { OrbitControls } from "@tresjs/cientos";
 const gl = {
   shadows: true,
   alpha: true,
@@ -53,15 +48,4 @@ const gl = {
   outputColorSpace: SRGBColorSpace,
   toneMapping: NoToneMapping,
 };
-import { OrbitControls } from "@tresjs/cientos";
-
-// const modelRef = shallowRef<any>(null);
-
-// const onModelError = (error: Error) => {
-//   console.error("Error loading model:", error);
-// };
-
-// watch(modelRef, () => {
-//   modelRef.value.instance.position.y = -2;
-// });
 </script>
