@@ -5,6 +5,15 @@
       class="flex flex-col lg:align-middle justify-between h-36 md:h-36 ml-2 md:ml-4 md:text-2xl lg:text-center z-10"
     >
       <p>
+        Epic Client Systems Administrator @
+        <NuxtLink
+          to="https://www.healthpartners.com/"
+          target="_blank"
+          class="underline"
+          >Health Partners</NuxtLink
+        >
+      </p>
+      <p>
         Epic Application Analyst @
         <NuxtLink to="https://aspirus.org/" target="_blank" class="underline"
           >Aspirus Health</NuxtLink
@@ -51,8 +60,8 @@ useSeoMeta({
   title: "About",
   ogTitle: "About Jaden Chant",
   author: "Jaden Chant",
-  description: "CS College Graduate from St. Olaf College",
-  ogDescription: "CS College Graduate from St. Olaf College",
+  description: "Epic Client Systems Administrator at Health Partners",
+  ogDescription: "Epic Client Systems Administrator at Health Partners",
   ogImage: "https://jadenchant.com/_ipx/w_1500/images/jaden_nyc.png",
 });
 </script>

@@ -13,9 +13,9 @@
       class="flex flex-col text-lg ml-2 md:ml-4 lg:ml-8 lg:h-56 lg:justify-between lg:text-2xl"
     >
       <p class="mb-4">
-        I am an Application Analyst at
-        <NuxtLink to="https://www.aspirus.org/" target="_blank"
-          >Aspirus Health</NuxtLink
+        I am an Epic Client Systems Administrator at
+        <NuxtLink to="https://www.healthpartners.com/" target="_blank"
+          >Health Partners</NuxtLink
         >.
       </p>
       <p class="mb-4">
@@ -50,8 +50,10 @@ useSeoMeta({
   title: "Jaden Chant",
   ogTitle: "Jaden Chant",
   author: "Jaden Chant",
-  description: "Recent CS College Graduate from St. Olaf College",
-  ogDescription: "Recent CS College Graduate from St. Olaf College",
+  description:
+    "Jaden is an Epic Client Systems Administrator at Health Partners",
+  ogDescription:
+    "Jaden is an Epic Client Systems Administrator at Health Partners",
   ogImage: "https://jadenchant.com/_ipx/w_1500/images/jaden_nyc.png",
 });
 </script>
