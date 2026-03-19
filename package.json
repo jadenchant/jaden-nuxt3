@@ -16,12 +16,12 @@
     "nuxt": "^4.4.2",
     "postcss": "^8.5.8",
     "prettier": "^3.8.1",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.2"
   },
   "dependencies": {
     "@Iconify-json/material-symbols": "npm:@iconify-json/material-symbols@^1.2.50",
     "@nuxt/image": "^2.0.0",
-    "@tailwindcss/vite": "^4.2.1",
+    "@tailwindcss/vite": "^4.2.2",
     "@tresjs/cientos": "^5.6.0",
     "@tresjs/core": "^5.7.0",
     "@tresjs/nuxt": "^5.5.0",
