@@ -8,26 +8,25 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.2.64",
+    "@iconify-json/material-symbols": "^1.2.65",
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/icon": "^2.2.1",
+    "@tailwindcss/vite": "^4.2.2",
     "@types/d3": "^7.4.3",
     "autoprefixer": "^10.4.27",
+    "dotenv": "^17.4.0",
     "nuxt": "^4.4.2",
     "postcss": "^8.5.8",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.2.2"
   },
   "dependencies": {
-    "@Iconify-json/material-symbols": "npm:@iconify-json/material-symbols@^1.2.50",
     "@nuxt/image": "^2.0.0",
-    "@tailwindcss/vite": "^4.2.2",
-    "@tresjs/cientos": "^5.6.0",
-    "@tresjs/core": "^5.7.0",
-    "@tresjs/nuxt": "^5.5.0",
+    "@tresjs/cientos": "^5.7.0",
+    "@tresjs/core": "^5.8.0",
+    "@tresjs/nuxt": "^5.6.0",
     "d3": "^7.9.0",
-    "dotenv": "^17.3.1",
-    "mongoose": "^9.3.3",
+    "mongoose": "^9.4.1",
     "three": "^0.183.2"
   }
 }

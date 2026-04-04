@@ -205,11 +205,25 @@
         <div class="mb-6 md:mb-8">
           <div class="flex justify-between text-base md:text-2xl">
             <h3>
+              <NuxtLink to="https://www.healthpartners.com/" target="_blank"
+                >HealthPartners</NuxtLink
+              >
+            </h3>
+            <h3>Mar 2026 - Current</h3>
+          </div>
+          <div class="flex justify-between md:ml-4">
+            <h4>Epic Application Analyst and Developer</h4>
+            <h4>Remote, MN</h4>
+          </div>
+        </div>
+        <div class="mb-6 md:mb-8">
+          <div class="flex justify-between text-base md:text-2xl">
+            <h3>
               <NuxtLink to="https://www.aspirus.org/" target="_blank"
                 >Aspirus Health</NuxtLink
               >
             </h3>
-            <h3>Aug 2025 - Current</h3>
+            <h3>Aug 2025 - Mar 2026</h3>
           </div>
           <div class="flex justify-between md:ml-4">
             <h4>Epic Application Analyst</h4>
