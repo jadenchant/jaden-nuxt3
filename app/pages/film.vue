@@ -32,7 +32,7 @@
     <NuxtLink
       to="https://en.wikipedia.org/wiki/Shutter_Island_(film)"
       target="_blank"
-      class="z-10"
+      class="z-10 mb-10"
     >
       <NuxtImg
         src="images/shutter.jpg"

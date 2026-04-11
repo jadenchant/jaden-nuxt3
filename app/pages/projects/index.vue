@@ -89,11 +89,11 @@
       internal
     />
     <ProjectCard
-      title="Reverse Word Search Games"
-      desc="Reverse word search games in multiple languages that can be played in terminal."
-      img="images/reverse-word-search.png"
-      alt="Reverse Word Search Game"
-      link="https://github.com/jadenchant/reverse-word-search"
+      title="Baking"
+      desc="Various baked goods that I have made."
+      img="images/chocolate-layered-cake.jpg"
+      link="/baking"
+      internal
     />
   </div>
 </template>
