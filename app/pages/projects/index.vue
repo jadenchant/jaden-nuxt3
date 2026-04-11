@@ -17,10 +17,17 @@
       alt="Jaden Chant's Website"
       link="https://github.com/jadenchant/jaden-nuxt"
     />
-
+    <ProjectCard
+      title="Baking"
+      desc="Mmmm yummy desserts..."
+      img="images/chocolate-layered-cake.jpg"
+      alt="Chocolate Cake"
+      link="/baking"
+      internal
+    />
     <ProjectCard
       title="IMDB Review Sentiment Prediction"
-      desc="Long Short Term Memory Machine Learning model used to predict sentiment from IMDB movie reviews."
+      desc="Long Short Term Memory Machine Learning Model used to predict sentiment from IMDB movie reviews."
       img="images/lstm-epoch.png"
       alt="IMDB Review Sentiment Prediction LSTM Epoch Graph"
       link="https://jadenchant.github.io/pages/projects/lstm/"
@@ -41,7 +48,7 @@
     />
     <ProjectCard
       title="Project 2025 Text Analysis"
-      desc="Collecting text data from the Project 2025 PDF using Python and doing analysis with R packages."
+      desc="Collecting text data from the Project 2025 PDF using Python and doing analysis with R."
       img="images/project2025.png"
       alt="Sentiment analysis from Project 2025"
       link="https://jadenchant.github.io/pages/projects/project_2025/"
@@ -55,7 +62,7 @@
     />
     <ProjectCard
       title="Data Science Mini Projects"
-      desc="DS projects like maps and text analysis using R and many R packages including tidyverse and ggplot."
+      desc="DS projects like maps and text analysis using R."
       img="images/miniproject-usmap.png"
       alt="Data Science Mini Project US Map"
       link="https://jadenchant.github.io/pages/maps/us_states.html"
@@ -73,14 +80,6 @@
       link="https://elevator.zone"
     />
     <ProjectCard
-      title="Toggle SVG Animation"
-      desc="Toggle SVG Animation using Vue.js/Nuxt.js and TailwindCSS"
-      img="images/toggle.png"
-      alt="Toggle"
-      link="/projects/toggle"
-      internal
-    />
-    <ProjectCard
       title="3D Flower Models"
       desc="Simple 3D models of flowers created with Tinkercad."
       img="images/flowers.png"
@@ -89,10 +88,11 @@
       internal
     />
     <ProjectCard
-      title="Baking"
-      desc="Various baked goods that I have made."
-      img="images/chocolate-layered-cake.jpg"
-      link="/baking"
+      title="Toggle SVG Animation"
+      desc="Toggle SVG Animation using Vue.js/Nuxt.js and TailwindCSS"
+      img="images/toggle.png"
+      alt="Toggle"
+      link="/projects/toggle"
       internal
     />
   </div>

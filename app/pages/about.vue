@@ -14,19 +14,13 @@
         >
       </p>
       <p>
-        Epic Application Analyst @
+        Former MyChart Analyst @
         <NuxtLink to="https://aspirus.org/" target="_blank" class="underline"
           >Aspirus Health</NuxtLink
         >
       </p>
       <p>
-        CS and Math Graduate from
-        <NuxtLink to="https://wp.stolaf.edu/" target="_blank" class="underline"
-          >St. Olaf College</NuxtLink
-        >
-      </p>
-      <p>
-        Software Engineering Intern @
+        Former Software Engineering Intern @
         <NuxtLink
           to="https://www.target.com/finds"
           target="_blank"
@@ -35,12 +29,18 @@
         >
       </p>
       <p>
-        Software Development Intern @
+        Former Software Development Intern @
         <NuxtLink
           to="https://www.usbank.com/wealth-management.html"
           target="_blank"
           class="underline"
           >US Bank</NuxtLink
+        >
+      </p>
+      <p>
+        CS and Math Graduate from
+        <NuxtLink to="https://wp.stolaf.edu/" target="_blank" class="underline"
+          >St. Olaf College</NuxtLink
         >
       </p>
     </div>
