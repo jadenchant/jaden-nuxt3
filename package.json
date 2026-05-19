@@ -15,7 +15,7 @@
     "@types/d3": "^7.4.3",
     "autoprefixer": "^10.5.0",
     "dotenv": "^17.4.2",
-    "nuxt": "^4.4.5",
+    "nuxt": "^4.4.6",
     "postcss": "^8.5.14",
     "prettier": "^3.8.3",
     "tailwindcss": "^4.3.0"
