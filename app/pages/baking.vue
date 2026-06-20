@@ -1,7 +1,7 @@
 <template>
   <title>Baking</title>
   <div
-    class="flex flex-col md:flex-row items-center md:items-start justify-between lg:mx-20 z-10 gap-10"
+    class="flex flex-col md:flex-row items-center md:items-start justify-between lg:mx-20 lg:mb-8 z-10 gap-10"
   >
     <NuxtLink
       to="https://preppykitchen.com/ultimate-chocolate-cake/"

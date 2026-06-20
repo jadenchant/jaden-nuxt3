@@ -81,6 +81,24 @@
         </h2>
         <div class="grid grid-cols-2 mb-4 gap-4 md:flex md:flex-col">
           <Certification
+            title="Web and Service Server Administrator"
+            dates="Jun 2026 - Jun 2029"
+            id="1705957427"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
+            title="Hyperspace Deployment Administrator"
+            dates="Jun 2026 - Jun 2029"
+            id="1705957426"
+            src="images/epic.png"
+            alt="Epic Logo"
+            issued="Epic Systems"
+            link="https://www.epic.com/"
+          />
+          <Certification
             title="MyChart Certification"
             dates="Nov 2025 - Nov 2028"
             id="1543087190"

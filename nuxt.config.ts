@@ -30,6 +30,9 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ["@tresjs/nuxt", "@tresjs/core", "@tresjs/cientos", "three"],
+    },
   },
 
   icon: {
@@ -40,5 +43,5 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
-  compatibilityDate: "2026-03-06",
+  compatibilityDate: "2026-06-20",
 });
